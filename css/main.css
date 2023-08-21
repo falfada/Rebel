@@ -1,0 +1,40 @@
+/**
+ * Site variables.
+ */
+/**
+ * Colors.
+ */
+/**
+ * Fonts.
+ */
+/**
+ * Screen sizes.
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+body {
+  width: 100%;
+  font-weight: 500;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+button {
+  appearance: none;
+  outline: none;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,55 @@
+/**
+ * Site variables.
+ */
+
+/**
+ * Colors.
+ */
+ $green: #0FF7A4;
+ $lightblue: #00F0FC;
+ $darkgrey: #262626;
+ $grey: #BFBFBF;
+ $gradient: linear-gradient(90deg, rgba(15,247,164,1) 0%, rgba(0,240,252,1) 100%);
+ 
+/**
+ * Fonts.
+ */
+ $font-heading: 'Poppins', sans-serif;
+ $font-content: 'Poppins', sans-serif;
+ $font-highlight: 'Montserrat', sans-serif;;
+ 
+ /**
+  * Screen sizes.
+  */
+ $screen_xs: '475px';
+ $screen_sm: '640px';
+ $screen_md: '768px';
+ $screen_lg: '1024px';
+ $screen_xl: '1280px';
+ $screen_2xl: '1536px';
+ $screen_3xl: '1600px';
+ $screen_tablet: $screen_sm;
+ $screen_laptop: $screen_lg;
+ $screen_desktop: $screen_xl;
+ 
+ @media (min-width: $screen_xs) {
+ }
+ 
+ @media (min-width: $screen_sm) {
+ }
+ 
+ @media (min-width: $screen_md) {
+ }
+ 
+ @media (min-width: $screen_lg) {
+ }
+ 
+ @media (min-width: $screen_xl) {
+ }
+ 
+ @media (min-width: $screen_2xl) {
+ }
+ 
+ @media (min-width: $screen_3xl) {
+ }
+ 
