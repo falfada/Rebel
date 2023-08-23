@@ -1,0 +1,49 @@
+header {
+  position: fixed;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  z-index: 100;
+  &.scrolled {
+    background: $darkgrey;
+    .logo{
+        background: url("../img/general/logo-color.svg") center no-repeat;
+    }
+    .nav-link{
+        color: white;
+        &:before{
+            background: white;
+        }
+    }
+  }
+  .logo {
+    width: 146px;
+    height: 64px;
+    background: url("../img/general/logo.svg") center no-repeat;
+    background-size: cover;
+    transition: background-color 0.3s ease;
+    text-indent: -9999px;
+  }
+  .nav-link{
+    color: $darkgrey;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+    position: relative;
+    &:before{
+        content: '';
+        width: 0;
+        height: 2px;
+        background: $darkgrey;
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        transition: all .2s ease;
+    }
+    &:hover{
+        &::before{
+            width: 100%;
+        }
+    }
+  }
+}
+

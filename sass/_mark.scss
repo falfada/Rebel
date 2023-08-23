@@ -1,0 +1,32 @@
+.mark{
+    position: relative;
+    display: inline-block;
+    &::before{
+        content: '';
+        position: absolute;
+        left: -1.6rem;
+        width: calc(100% + 3.2rem);
+        height: 100%;
+        transform: skew(-10deg);
+    }
+    span{
+        position: relative;
+        z-index: 2;
+    }
+    &.black{
+        &::before{
+            background: $darkgrey;
+        }
+        span{
+            color: $green;
+        }
+    }
+    &.gradient{
+        &::before{
+            background: $gradient;
+        }
+        span{
+            color: $darkgrey;
+        }
+    }
+}

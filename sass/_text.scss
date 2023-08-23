@@ -1,9 +1,64 @@
-h1, h2, h3, h4, h5, h6{
-    font-family: $font-heading;
-    font-weight: 800;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-heading;
+  font-weight: 800;
 }
-.text{
-    &-2xl{
-        font-size: 8rem;
-    }   
+
+.text {
+  /**
+ * Font size.
+ */
+  &-3xl {
+    font-size: 8rem;
+  }
+  &-2xl{
+    font-size: 3.2rem;
+  }
+  &-xl{
+    font-size: 2.8rem;
+  }
+  &-lg{
+    font-size: 2.4rem;
+  }
+  &-md{
+    font-size: 2rem;
+  }
+  &-sm{
+    font-size: 1.6rem;
+  }
+
+  /**
+ * Text color.
+ */
+ &-white{
+    color: white;
+ }
+ &-black{
+    color: $darkgrey;
+ }
+ &-green{
+    color: $green;
+ }
 }
+
+/**
+ * Font weight.
+ */
+ .font{
+     &-400{
+        font-weight: 400;
+     }
+     &-600{
+        font-weight: 600;
+     }
+     &-700{
+        font-weight: 700;
+     }
+     &-800{
+        font-weight: 700;
+     }
+ }
