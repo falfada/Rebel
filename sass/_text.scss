@@ -62,3 +62,15 @@ h6 {
         font-weight: 700;
      }
  }
+ /**
+ * Line Height.
+ */
+ $lineHeight : 1;
+ .line{
+    @while $lineHeight < 5{
+        &-#{$lineHeight}{
+            line-height: $lineHeight;
+        }
+        $lineHeight : $lineHeight + 1;
+    }
+ }

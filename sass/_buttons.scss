@@ -1,14 +1,17 @@
 .button{
     border-radius: 9px;
-    padding: 1.4rem 6.4rem;
+    padding: 1rem 6.4rem;
     position: relative;
-    display: inline-block;
+    display: block;
     overflow: hidden;
 	transition: all 0.4s cubic-bezier(.86, .01, .15, .99);
     transform: perspective(1px) translateZ(0);
+    color: $darkgrey;
+    font-weight: 800;
+    font-size: 1.8rem;
     &::before{
         content: '';
-        width: 110%;
+        width: 150%;
         height: 100%;
         position: absolute;
         top: 0;
@@ -18,16 +21,38 @@
         transition: 0.4s;
         clip-path: inset(0 100% 0 0);
     }
+    &:hover{
+        &::before{
+            clip-path: inset(0 0 0 0);
+        }
+
+    }
     &.gradient{
         background: $gradient;
         &::before{
             background: $green;
         }
+        
+    }
+    &.black{
+        background: $darkgrey;
+        color: white;
         &:hover{
+            color: $darkgrey;
             &::before{
-                clip-path: inset(0 0 0 0);
+                background: $gradient;
             }
-
+        }
+    }
+    &.outline{
+        &-black{
+            border: 1px solid $darkgrey;
+            &:hover{
+                border: 1px solid transparent;
+                &:before{
+                    background: $gradient;
+                }
+            }
         }
     }
 }

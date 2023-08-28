@@ -1,0 +1,71 @@
+ /**
+ * Clients slider.
+ */
+.clients-slider{
+    .slick-track{
+        transition: transform 15s linear;
+    }
+    .logo-item{
+        height: 6rem;
+    }
+    .slick-slide{
+        img{
+            margin: auto;
+        }
+    }
+}
+ /**
+ * Testimonials.
+ */
+ .testimonials{
+    .swiper-pagination{
+        display: none;
+    }
+    .swiper-wrapper{
+        transition: transform 0.5s linear;
+    }
+    .client{
+        border-radius: 8px;
+        overflow: hidden;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 5.4rem 3.2rem;
+        &.swiper-slide{
+            width: 25%;
+        }
+        &.green{
+            background-image: url('../img/general/green-bg.png');
+        }
+        &.lightblue{
+            background-image: url('../img/general/lightblue-bg.png');
+        }
+        &.blue{
+            background-image: url('../img/general/blue-bg.png');
+        }
+    }
+    .video{
+        &.swiper-slide{
+            width: 50%;
+            height: 25vw;
+        }
+        border-radius: 8px;
+        overflow: hidden;
+       &::after{
+        content: '';
+        position: absolute;
+        background: $darkgrey;
+        border-radius: 0 0 8px 8px;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2.4rem;
+       } 
+    }
+    .slick-slide{
+        height: 25vw;
+        p{
+            height: calc(100% - 88px);
+        }
+    }
+ }

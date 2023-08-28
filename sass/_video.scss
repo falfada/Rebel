@@ -1,0 +1,24 @@
+.video {
+  position: relative;
+  #play-button {
+    &-container{
+        position: absolute;
+        width: 13rem;
+        height: 13rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &-icon{
+        fill: $green;
+        transition: all .3s;
+    }
+  }
+  &:hover{
+    #play-button{
+        &-icon{
+            fill: url(#linear-gradient);
+        }
+    }
+  }
+}

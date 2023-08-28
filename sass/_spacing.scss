@@ -1,0 +1,12 @@
+/**
+ * Margin.
+ */
+ $marginValue : 16;
+ .m{
+    @while $marginValue < 120{
+        &t-#{$marginValue}{
+            margin-top: #{$marginValue / 10}rem;
+        }
+        $marginValue : $marginValue + 8;
+    }
+ }

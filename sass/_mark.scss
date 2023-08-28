@@ -1,32 +1,50 @@
-.mark{
+.mark {
+  position: relative;
+  display: inline-block;
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    transform: skew(-10deg);
+    transition: width 0.3 ease;
+  }
+  span {
     position: relative;
-    display: inline-block;
-    &::before{
-        content: '';
-        position: absolute;
-        left: -1.6rem;
-        width: calc(100% + 3.2rem);
-        height: 100%;
-        transform: skew(-10deg);
+    z-index: 2;
+    transition: color 0.3 ease;
+  }
+  &.black {
+    &::before {
+      background: $darkgrey;
     }
-    span{
-        position: relative;
-        z-index: 2;
+  }
+  &.gradient {
+    &::before {
+      background: $gradient;
     }
-    &.black{
-        &::before{
-            background: $darkgrey;
-        }
-        span{
-            color: $green;
-        }
+    span {
+      color: $darkgrey;
     }
-    &.gradient{
-        &::before{
-            background: $gradient;
-        }
-        span{
-            color: $darkgrey;
-        }
+  }
+  /**
+ * Animation.
+ */
+  &.hidden {
+    &.black {
+      &::before {
+        left: -110%;
+      }
+      span {
+        color: $darkgrey;
+      }
     }
+  }
+  &.show {
+    &::before {
+      left: -1.6rem;
+    }
+    span {
+      color: $green;
+    }
+  }
 }

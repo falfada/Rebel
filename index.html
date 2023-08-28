@@ -1,49 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rebel</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/main.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.3/lottie.min.js"></script>
-  
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.3/lottie.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
     <header class="header">
-        <nav class="d-flex justify-between align-center container">
-            <a href="index.html" class="logo">Rebel</a>
-            <ul class="d-flex gap-64 align-center">
-                <li><a href="pricing.html" class="text-md nav-link">Pricing</a></li>
-                <li><a href="getstarted.html" class="button gradient text-md text-black font-800">Book a call</a></li>
-            </ul>
-        </nav>
+      <nav class="d-flex justify-between align-center container">
+        <a href="index.html" class="logo">Rebel</a>
+        <ul class="d-flex gap-64 align-center">
+          <li><a href="pricing.html" class="text-md nav-link">Pricing</a></li>
+          <li>
+            <a href="getstarted.html" class="button gradient">Book a call</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <section class="hero">
-        <div class="container">
-            <div class="d-flex">
-                <h1 class="text-3xl col-8">
-                    <span class="mark black"><span>Elevate</span></span><br/> Your Video Editing, Amplify <span class="mark black"><span>Your Impact</span></span>
-                </h1>
-                <div class="col-4">
-                    <!-- Video -->
-                </div>
+      <div class="container">
+        <div class="d-flex">
+          <div class="col-8">
+            <h1 class="text-3xl">
+              <span class="mark black hidden"><span>Elevate</span></span
+              ><br />
+              Your Video Editing, Amplify
+              <span class="mark black hidden"><span>Your Impact</span></span>
+            </h1>
+            <p class="text-xl mt-40 col-10 line-2">
+              We help content creators and companies hire top editing remote
+              teams. Save cost and time with
+              <span class="font-800">lighting-fast results.</span>
+            </p>
+            <div class="d-flex gap-16 mt-48">
+              <a href="getstarted.html" class="button black">Book a Call</a>
+              <a href="pricing.html" class="button outline-black"
+                >View Pricing</a
+              >
             </div>
+          </div>
+          <div class="col-4">
+            <!-- Video -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="clients-slider">
+        <div class="logo-item">
+            <img src="img/home/logo-icetex.png" alt="Logo Icetext"/>
+        </div>
+        <div class="logo-item">
+            <img src="img/home/logo-powerPalPueblo.png" alt="Logo Power Pal Pueblo"/>
+        </div>
+        <div class="logo-item">
+            <img src="img/home/logo-nimmok.png" alt="Logo Nimmok"/>
+        </div>
+        <div class="logo-item">
+            <img src="img/home/logo-icetex.png" alt="Logo Icetext"/>
+        </div>
+        <div class="logo-item">
+            <img src="img/home/logo-powerPalPueblo.png" alt="Logo Power Pal Pueblo"/>
+        </div>
+        <div class="logo-item">
+            <img src="img/home/logo-nimmok.png" alt="Logo Nimmok"/>
+        </div>
+    </section>
+    <section class="testimonials mt-96">
+        <div class="client green" >
+            <p class="text-lg">
+                “The team’s seamless communication and quick turnarounds have allowed me to meet tight deadlines without compromising quality.”
+            </p>
+            <div class="mt-16 d-flex justify-between align-center">
+                <img src="img/general/testimonial.png" alt="Portrait Sarah" width="72" height="72"/>
+                <p class="col-10">
+                    Sarah H.,
+                    <span class="font-800 d-block">Content Creator</span>
+                </p>
+            </div>
+        </div>
+        <div class="video horizontal">
+            <div id="play-button-container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="play-button-icon">
+                    <defs>
+                        <linearGradient id="linear-gradient" x1="0.254" y1="0.5" x2="1" y2="1" gradientUnits="objectBoundingBox">
+                          <stop offset="0" stop-color="#00f0fc"/>
+                          <stop offset="1" stop-color="#0ff7a4"/>
+                        </linearGradient>
+                      </defs>
+                    <polygon points="20,15 80,50 20,85"/>
+                  </svg>                  
+            </div>
+            <video>
+                <source src="videos/horizontal-video.mp4">
+            </video>
+        </div>
+        <div class="client blue" >
+            <p class="text-lg">
+                “The team’s seamless communication and quick turnarounds have allowed me to meet tight deadlines without compromising quality.”
+            </p>
+            <div class="mt-16 d-flex justify-between align-center">
+                <img src="img/general/testimonial.png" alt="Portrait Sarah" width="72" height="72"/>
+                <p class="col-10">
+                    Sarah H.,
+                    <span class="font-800 d-block">Content Creator</span>
+                </p>
+            </div>
+        </div>
+        <div class="video vertical">
+            <div id="play-button-container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="play-button-icon">
+                    <defs>
+                        <linearGradient id="linear-gradient" x1="0.254" y1="0.5" x2="1" y2="1" gradientUnits="objectBoundingBox">
+                          <stop offset="0" stop-color="#00f0fc"/>
+                          <stop offset="1" stop-color="#0ff7a4"/>
+                        </linearGradient>
+                      </defs>
+                    <polygon points="20,15 80,50 20,85"/>
+                  </svg>                  
+            </div>
+            <video>
+                <source src="videos/vertical-video.mp4">
+            </video>
+        </div>
+        <div class="client lightblue" >
+            <p class="text-lg">
+                “The team’s seamless communication and quick turnarounds have allowed me to meet tight deadlines without compromising quality.”
+            </p>
+            <div class="mt-16 d-flex justify-between align-center">
+                <img src="img/general/testimonial.png" alt="Portrait Sarah" width="72" height="72"/>
+                <p class="col-10">
+                    Sarah H.,
+                    <span class="font-800 d-block">Content Creator</span>
+                </p>
+            </div>
+        </div>
+        <div class="video horizontal">
+            <div id="play-button-container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="play-button-icon">
+                    <defs>
+                        <linearGradient id="linear-gradient" x1="0.254" y1="0.5" x2="1" y2="1" gradientUnits="objectBoundingBox">
+                          <stop offset="0" stop-color="#00f0fc"/>
+                          <stop offset="1" stop-color="#0ff7a4"/>
+                        </linearGradient>
+                      </defs>
+                    <polygon points="20,15 80,50 20,85"/>
+                  </svg>                  
+            </div>
+            <video>
+                <source src="videos/horizontal-video.mp4">
+            </video>
         </div>
     </section>
     <section class="gradient-bg">
-        <div class="container">
-            <h2 class="text-3xl">Why <span class="mark black"><span>Rebel</span></span></h2>
-        </div>
+      <div class="container">
+        <h2 class="text-3xl">
+          Why <span class="mark black"><span>Rebel</span></span>
+        </h2>
+      </div>
     </section>
     <!--
     <div id="lottie-container"></div>
     -->
+    <!-- Popups -->
+    <div class="popup-overlay">
+        <div class="popup-content">
+          
+          <button class="close-popup">Close</button>
+        </div>
+      </div>
+    </div>
+
     <script src="js/functions.js"></script>
-</body>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+  </body>
 </html>
