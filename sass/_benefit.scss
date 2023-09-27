@@ -1,0 +1,42 @@
+.benefit {
+  &-container {
+    position: relative;
+    border: 1.5px solid $green;
+    border-radius: 8px;
+    padding: 8rem 5rem 8rem 4rem;
+    &:nth-child(3) {
+      padding: 8rem 1rem 8rem 4rem;
+    }
+    &::before {
+      content: "";
+      width: 20rem;
+      height: 10rem;
+      background: white;
+      position: absolute;
+      top: -5rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &-img {
+    width: 88px;
+    position: absolute;
+    top: -4.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: $screen_md) {
+  .benefit {
+    &-container {
+      padding: 3.2rem;
+      &::before {
+        width: 11rem;
+        height: 6rem;
+      }
+    }
+    &-img {
+      width: 56px;
+    }
+  }
+}

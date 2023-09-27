@@ -1,0 +1,45 @@
+.position{
+    &-sticky{
+        position: sticky;
+        top: 11.8rem;
+    }
+    &-relative{
+        position: relative;
+    }
+    &-absolute{
+        position: absolute;
+        &.top{
+            top: 0;
+        }
+        &.right{
+            right: 0;
+        }
+        &.bottom{
+            bottom: 0;
+        }
+        &.left{
+            left: 0;
+        }
+    }
+}
+@media (max-width: $screen_lg) {
+    .position{
+        &-sticky{
+            top: 0;
+        }
+        &-lg{
+            &-relative{
+                position: relative;
+            }
+        }
+    }
+}
+@media (max-width: $screen_md) {
+    .position{
+        &-md{
+            &-relative{
+                position: relative;
+            }
+        }
+    }
+}

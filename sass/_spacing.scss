@@ -1,12 +1,79 @@
 /**
  * Margin.
  */
- $marginValue : 16;
- .m{
-    @while $marginValue < 120{
-        &t-#{$marginValue}{
-            margin-top: #{$marginValue / 10}rem;
-        }
-        $marginValue : $marginValue + 8;
+$marginValue: 8;
+.m {
+  &-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @while $marginValue <= 120 {
+    &t-#{$marginValue} {
+      margin-top: #{$marginValue / 10}rem;
     }
- }
+    $marginValue: $marginValue + 8;
+  }
+}
+/**
+ * Padding.
+ */
+$paddingValue: 16;
+.p {
+  @while $paddingValue <= 116 {
+    &-#{$paddingValue} {
+      padding: #{$paddingValue / 10}rem;
+    }
+    $paddingValue: $paddingValue + 8;
+  }
+}
+@media (max-width: $screen_lg) {
+  /**
+ * Margin.
+ */
+  .m {
+    &-lg-auto {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @while $marginValue <= 120 {
+      &t-lg-#{$marginValue} {
+        margin-top: #{$marginValue / 10}rem;
+      }
+      $marginValue: $marginValue + 8;
+    }
+  }
+}
+@media (max-width: $screen_md) {
+  /**
+ * Margin.
+ */
+ .m {
+  &-md-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @while $marginValue <= 120 {
+    &t-md-#{$marginValue} {
+      margin-top: #{$marginValue / 10}rem;
+    }
+    $marginValue: $marginValue + 8;
+  }
+}
+}
+@media (max-width: $screen_sm) {
+  /**
+ * Margin.
+ */
+ .m {
+  &-sm-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @while $marginValue <= 120 {
+    &t-sm-#{$marginValue} {
+      margin-top: #{$marginValue / 10}rem;
+    }
+    $marginValue: $marginValue + 8;
+  }
+}
+}

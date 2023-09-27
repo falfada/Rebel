@@ -12,65 +12,198 @@ h6 {
   /**
  * Font size.
  */
-  &-3xl {
+  &-5xl {
     font-size: 8rem;
   }
-  &-2xl{
+  &-4xl {
+    font-size: 7.2rem;
+  }
+  &-3xl {
+    font-size: 4rem;
+  }
+  &-2xl {
     font-size: 3.2rem;
   }
-  &-xl{
+  &-xl {
     font-size: 2.8rem;
   }
-  &-lg{
+  &-lg {
     font-size: 2.4rem;
   }
-  &-md{
+  &-md {
     font-size: 2rem;
   }
-  &-sm{
+  &-sm {
     font-size: 1.6rem;
   }
 
   /**
  * Text color.
  */
- &-white{
+  &-white {
     color: white;
- }
- &-black{
+  }
+  &-black {
     color: $darkgrey;
- }
- &-green{
+  }
+  &-green {
     color: $green;
- }
+  }
+
+  /**
+ * Text alignment.
+ */
+  &-center {
+    text-align: center;
+  }
+  &-left {
+    text-align: left;
+  }
+
+  /**
+ * Text decoration.
+ */
+  &-underline {
+    text-decoration: underline;
+  }
+
+  /**
+ * Text transform.
+ */
+  &-capitalize {
+    text-transform: capitalize;
+  }
 }
 
 /**
  * Font weight.
  */
- .font{
-     &-400{
-        font-weight: 400;
-     }
-     &-600{
-        font-weight: 600;
-     }
-     &-700{
-        font-weight: 700;
-     }
-     &-800{
-        font-weight: 700;
-     }
- }
- /**
+.font {
+  &-400 {
+    font-weight: 400;
+  }
+  &-600 {
+    font-weight: 600;
+  }
+  &-700 {
+    font-weight: 700;
+  }
+  &-800 {
+    font-weight: 800;
+  }
+}
+/**
  * Line Height.
  */
- $lineHeight : 1;
- .line{
-    @while $lineHeight < 5{
-        &-#{$lineHeight}{
-            line-height: $lineHeight;
-        }
-        $lineHeight : $lineHeight + 1;
+$lineHeight: 1;
+.line {
+  @while $lineHeight < 5 {
+    &-#{$lineHeight} {
+      line-height: $lineHeight;
     }
- }
+    $lineHeight: $lineHeight + 1;
+  }
+}
+
+@media (max-width: $screen_lg) {
+  .text {
+    /**
+ * Font size.
+ */
+    &-5xl {
+      font-size: 6.4rem;
+    }
+    &-4xl {
+      font-size: 4rem;
+    }
+    &-3xl {
+      font-size: 3.2rem;
+    }
+    &-2xl {
+      font-size: 2.8rem;
+    }
+    &-xl {
+      font-size: 2.4rem;
+    }
+    &-lg {
+      font-size: 2rem;
+    }
+    &-md {
+      font-size: 1.8rem;
+    }
+    &-sm {
+      font-size: 1.4rem;
+    }
+
+    &-lg {
+      /**
+ * Text alignment.
+ */
+      &-center {
+        text-align: center;
+      }
+      &-left {
+        text-align: left;
+      }
+    }
+  }
+}
+@media (max-width: $screen_md) {
+  .text {
+    /**
+ * Font size.
+ */
+    &-5xl {
+      font-size: 4.8rem;
+    }
+    &-4xl {
+      font-size: 4rem;
+    }
+    &-3xl {
+      font-size: 2.8rem;
+    }
+    &-2xl {
+      font-size: 2rem;
+    }
+    &-xl {
+      font-size: 2rem;
+    }
+    &-lg {
+      font-size: 1.8rem;
+    }
+    &-md {
+      font-size: 1.6rem;
+    }
+    &-sm {
+      font-size: 1.4rem;
+    }
+
+    &-md {
+      /**
+ * Text alignment.
+ */
+      &-center {
+        text-align: center;
+      }
+      &-left {
+        text-align: left;
+      }
+    }
+  }
+}
+@media (max-width: $screen_sm) {
+  .text {
+    /**
+ * Font size.
+ */
+    &-5xl {
+      font-size: 4rem;
+    }
+    &-4xl {
+      font-size: 3.2rem;
+    }
+    &-3xl {
+      font-size: 2.4rem;
+    }
+  }
+}

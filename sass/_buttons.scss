@@ -2,7 +2,7 @@
     border-radius: 9px;
     padding: 1rem 6.4rem;
     position: relative;
-    display: block;
+    display: inline-block;
     overflow: hidden;
 	transition: all 0.4s cubic-bezier(.86, .01, .15, .99);
     transform: perspective(1px) translateZ(0);
@@ -45,7 +45,9 @@
         }
     }
     &.outline{
+        
         &-black{
+            background: white;
             border: 1px solid $darkgrey;
             &:hover{
                 border: 1px solid transparent;
@@ -54,5 +56,11 @@
                 }
             }
         }
+    }
+}
+@media (max-width: $screen_sm) {
+    .button{
+        padding: 1rem 3.2rem;
+        font-size: 1.6rem;
     }
 }

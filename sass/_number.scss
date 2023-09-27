@@ -1,0 +1,13 @@
+.round-number{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "good-times",sans-serif;
+    &.black{
+        background: $darkgrey;
+        color: $green;
+    }
+}

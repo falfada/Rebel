@@ -3,48 +3,75 @@
   display: inline-block;
   &::before {
     content: "";
+    left: -1.6rem;
     position: absolute;
     height: 100%;
     transform: skew(-10deg);
-    transition: width 0.3 ease;
+    transition: all 0.3 ease;
+  }
+  &.animate {
+    &::before {
+      animation: widthChange 0.3s ease forwards;
+    }
+    &.black{
+      span{
+        color: $green;
+      }
+    }
+    &.gradient{
+      span{
+        color: $darkgrey;
+      }
+    }
   }
   span {
     position: relative;
     z-index: 2;
     transition: color 0.3 ease;
+    color: $darkgrey;
   }
   &.black {
     &::before {
       background: $darkgrey;
+    }
+    &.white-text{
+      span{
+        color: white;
+      }
+    }
+  }
+  &.green {
+    &::before {
+      background: $green;
     }
   }
   &.gradient {
     &::before {
       background: $gradient;
     }
-    span {
-      color: $darkgrey;
+  }
+
+  @keyframes widthChange {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: calc(100% + 3.2rem);
     }
   }
-  /**
- * Animation.
- */
-  &.hidden {
-    &.black {
-      &::before {
-        left: -110%;
-      }
-      span {
-        color: $darkgrey;
-      }
+}
+@media (max-width: $screen_md) {
+  .mark{
+    &::before{
+      left: -.8rem;
     }
   }
-  &.show {
-    &::before {
-      left: -1.6rem;
+  @keyframes widthChange {
+    0% {
+      width: 0;
     }
-    span {
-      color: $green;
+    100% {
+      width: calc(100% + 1.6rem);
     }
   }
 }

@@ -1,30 +1,28 @@
  /**
  * Clients slider.
  */
-.clients-slider{
-    .slick-track{
-        transition: transform 15s linear;
+.clients-logos{
+    width: 100%;
+    overflow: hidden;
+    .swiper-wrapper{
+        transition-timing-function: linear;
     }
-    .logo-item{
-        height: 6rem;
-    }
-    .slick-slide{
-        img{
-            margin: auto;
-        }
+    .swiper-slide{
+        width: 15%;
+        text-align: center;
     }
 }
  /**
  * Testimonials.
  */
  .testimonials{
-    .swiper-pagination{
-        display: none;
-    }
+    width: 100%;
+    overflow: hidden;
     .swiper-wrapper{
-        transition: transform 0.5s linear;
+        transition-timing-function : linear;
     }
     .client{
+        height: 30vw;
         border-radius: 8px;
         overflow: hidden;
         background-size: cover;
@@ -43,14 +41,25 @@
         &.blue{
             background-image: url('../img/general/blue-bg.png');
         }
+        p{
+            height: calc(100% - 72px);
+        }
     }
     .video{
-        &.swiper-slide{
+        &.horizontal{
             width: 50%;
-            height: 25vw;
         }
+        &.vertical{
+            width: 25%;
+        }
+        height: 30vw;
         border-radius: 8px;
         overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
        &::after{
         content: '';
         position: absolute;
@@ -62,10 +71,65 @@
         height: 2.4rem;
        } 
     }
-    .slick-slide{
-        height: 25vw;
-        p{
-            height: calc(100% - 88px);
+    
+ }
+ @media (max-width: $screen_lg) {
+    .clients-logos{
+        .swiper-slide{
+            width: 28%;
         }
     }
- }
+    .testimonials{
+        .client{
+            padding: 3.2rem;
+            &.swiper-slide{
+                width: 45%;
+            }
+        }
+    }
+}
+
+@media (max-width: $screen_md) {
+    .clients-logos{
+        .swiper-slide{
+            width: 35%;
+        }
+    }
+    .testimonials{
+        .client{
+            height: 38vw;
+            padding: 2.4rem;
+            &.swiper-slide{
+                width: 50%;
+            }
+        }
+        .video{
+            height: 38vw;
+        }
+    }
+}
+@media (max-width: $screen_sm) {
+    .testimonials{
+        .client{
+            height: 110vw;
+            padding: 1.6rem;
+            p{
+                height: calc(100% - 100px);
+            }
+        }
+        .video{
+            height: 110vw;
+            &.horizontal{
+                width: 100%;
+            }
+             &.vertical{
+                width: 50%;
+            }
+        }
+    }
+    .clients-logos{
+        .swiper-slide{
+            width: 55%;
+        }
+    }
+}

@@ -1,48 +1,293 @@
 /**
  * Site layout.
  */
-.container{
-    width: 90%;
-    max-width: 1640px;
-    margin: auto;
+.container {
+  width: 90%;
+  max-width: 1640px;
+  margin: auto;
 }
-/**
+.d {
+ &-block{
+    display: block
+  }
+  /**
  * Flexbox.
  */
-.d{
-    &-flex{
-       display: flex; 
-       flex-wrap: wrap;
-    }
-    &-block{
-        display: block;
-    }
+  &-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &-block {
+    display: block;
+  }
+  &-grid {
+    display: grid;
+  }
 }
-.justify{
-    &-between{
-        justify-content: space-between;
-    }
+.justify {
+  &-between {
+    justify-content: space-between;
+  }
+  &-center {
+    justify-content: center;
+  }
+  &-around {
+    justify-content: space-around;
+  }
+  &-end{
+    justify-content: flex-end;
+  }
 }
-.align{
-    &-center{
-        align-items: center;
+.align {
+  &-center {
+    align-items: center;
+  }
+  &-self {
+    &-start {
+      align-self: flex-start;
     }
+  }
+  &-baseline {
+    align-items: baseline;
+  }
 }
-.gap{
-    &-64{
-        gap: 6.4rem;
-    }
-    &-16{
-        gap: 1.6rem;
-    }
+.gap {
+  &-16 {
+    gap: 1.6rem;
+  }
+  &-24 {
+    gap: 2.4rem;
+  }
+  &-64 {
+    gap: 6.4rem;
+  }
 }
 /**
  * Columns.
  */
- $col: 1;
- @while $col < 13 {
-   .col-#{$col} {
+$col: 1;
+@while $col < 13 {
+  .col-#{$col} {
     width: 100%/12 * $col;
+  }
+
+  $col: $col + 1;
 }
-   $col: $col + 1;
+/**
+ * Grid Columns.
+ */
+$gridCol: 1;
+.grid {
+  @while $gridCol <= 12 {
+    &-col-#{$gridCol} {
+      grid-template-columns: repeat($gridCol, 1fr);
+    }
+    $gridCol: $gridCol + 1;
+  }
+}
+@media (max-width: $screen_2xl) {
+  /**
+ * Columns.
+ */
+ .col-2xl{
+  $col: 1;
+   @while $col < 13 {
+     &-#{$col} {
+       width: 100%/12 * $col;
+     }
+ 
+     $col: $col + 1;
+   }
  }
+}
+@media (max-width: $screen_xl){
+   /**
+ * Grid Columns.
+ */
+ .grid {
+  &-xl {
+    @while $gridCol <= 12 {
+      &-col-#{$gridCol} {
+        grid-template-columns: repeat($gridCol, 1fr);
+      }
+      $gridCol: $gridCol + 1;
+    }
+  }
+}
+}
+@media (max-width: $screen_lg) {
+  /**
+ * Columns.
+ */
+ .col-lg{
+  $col: 1;
+   @while $col < 13 {
+     &-#{$col} {
+       width: 100%/12 * $col;
+     }
+ 
+     $col: $col + 1;
+   }
+ }
+  /**
+ * Grid Columns.
+ */
+  .grid {
+    &-lg {
+      @while $gridCol <= 12 {
+        &-col-#{$gridCol} {
+          grid-template-columns: repeat($gridCol, 1fr);
+        }
+        $gridCol: $gridCol + 1;
+      }
+    }
+  }
+  /**
+ * Display.
+ */
+ .d{
+  &-lg{
+    &-block{
+      display: block
+    }
+    &-none{
+      display: none;
+    }
+  }
+ }
+ /**
+ * Flexbox.
+ */
+ .justify-lg {
+  &-between {
+    justify-content: space-between;
+  }
+  &-center {
+    justify-content: center;
+  }
+  &-around {
+    justify-content: space-around;
+  }
+}
+/**
+ * Gap.
+ */
+.gap {
+  &-y-lg{
+    &-64{
+      row-gap: 6.4rem;
+    }
+  }
+  &-x-lg{
+    &-16{
+      column-gap: 1.6rem;
+    }
+  }
+}
+}
+@media (max-width: $screen_md) {
+  /**
+ * Display.
+ */
+ .d{
+  &-md{
+    &-block{
+      display: block
+    }
+    &-none{
+      display: none;
+    }
+  }
+ }
+  /**
+ * Columns.
+ */
+ .col-md{
+  $col: 1;
+   @while $col < 13 {
+     &-#{$col} {
+       width: 100%/12 * $col;
+     }
+ 
+     $col: $col + 1;
+   }
+ }
+ /**
+ * Grid Columns.
+ */
+ .grid {
+  &-md {
+    @while $gridCol <= 12 {
+      &-col-#{$gridCol} {
+        grid-template-columns: repeat($gridCol, 1fr);
+      }
+      $gridCol: $gridCol + 1;
+    }
+  }
+}
+/**
+ * Gap.
+ */
+ .gap{
+  &-md{
+    &-24{
+      gap: 2.4rem;
+    }
+    &-32{
+      gap: 3.2rem;
+    }
+  }
+ }
+}
+@media (max-width: $screen_sm) {
+  /**
+ * Grid Columns.
+ */
+ .grid {
+  &-sm {
+    @while $gridCol <= 12 {
+      &-col-#{$gridCol} {
+        grid-template-columns: repeat($gridCol, 1fr);
+      }
+      $gridCol: $gridCol + 1;
+    }
+  }
+}
+/**
+ * Columns.
+ */
+ .col-sm{
+  $col: 1;
+   @while $col < 13 {
+     &-#{$col} {
+       width: 100%/12 * $col;
+     }
+ 
+     $col: $col + 1;
+   }
+ }
+ /**
+ * Display.
+ */
+ .d{
+  &-sm{
+    &-block{
+      display: block
+    }
+    &-none{
+      display: none;
+    }
+  }
+ }
+ /**
+ * Gap.
+ */
+.gap {
+  &-sm{
+    &-0{
+      gap: 0.2rem;
+    }
+  }
+}
+}
+

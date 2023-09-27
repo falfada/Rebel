@@ -6,6 +6,14 @@
 ul, ol{
     list-style-type: none;
 }
+ul.green{
+    li{
+        &::before{
+            content: '• ';
+            color: $green;
+        }
+    }
+}
 html{
     font-size: 10px;
 }
@@ -24,6 +32,8 @@ a{
 button{
     appearance: none;
     outline: none;
+    border: none;
+    cursor: pointer;
 }
 header{
     width: 100%;

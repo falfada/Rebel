@@ -1,0 +1,66 @@
+.faq{
+    &-container{
+        background: white;
+        box-shadow: 3px 3px 25px rgba($grey, .3);
+        padding: 24px 40px;
+        border-radius: 12px;
+        transition: all .3s ease;
+    }
+    &-trigger{
+        cursor: pointer;
+        position: relative;
+        &::before{
+            content: '';
+            width: 23px;
+            height: 20px;
+            position: absolute;
+            top: 50%;
+            left: -4px;
+            transform: translateY(-50%);
+            background: url('../img/general/faq-icon.svg') center no-repeat;
+            background-size: cover;
+        }
+        p{
+          z-index: 2;  
+          position: relative;
+        }
+    }
+    &-expand{
+        transition: all .3s ease;
+        opacity: 0;
+        height: 0;
+        &.show{
+            opacity: 1;
+            height: auto;
+            margin-top: 3.2rem;
+        }
+    }
+    &-icon{
+        span{
+            transition: all .3s ease;
+        }
+        &.rotate{
+            span{
+                transform: rotate(180deg);
+                transform-origin: center center;
+            }
+        }
+    }
+}
+@media (max-width: $screen_sm) {
+    .faq{
+        &-container{
+            padding: 1.6rem;
+        }
+        &-icon{
+            display: none;
+        }
+        &-trigger{
+            &::before{
+                top: 12px;
+                left: -8px;
+                background-size: contain;
+            }
+        }
+    }
+}

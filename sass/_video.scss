@@ -1,24 +1,75 @@
 .video {
   position: relative;
   #play-button {
-    &-container{
-        position: absolute;
-        width: 13rem;
-        height: 13rem;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    &-container {
+      position: absolute;
+      width: 13rem;
+      height: 13rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
-    &-icon{
-        fill: $green;
-        transition: all .3s;
+    &-icon {
+      fill: $green;
+      transition: all 0.3s;
+      &.top-left {
+        position: absolute;
+        width: 16rem;
+        height: 20rem;
+        top: -9.5rem;
+        left: -5rem;
+      }
+      &.center {
+        position: absolute;
+        width: 16rem;
+        height: 20rem;
+        top: 30%;
+        left: 40%;
+      }
     }
   }
-  &:hover{
-    #play-button{
-        &-icon{
-            fill: url(#linear-gradient);
-        }
+  &:hover {
+    #play-button {
+      &-icon {
+        fill: url(#linear-gradient);
+      }
+    }
+  }
+}
+@media (max-width: $screen_md) {
+  .video {
+    #play-button-container {
+      width: 9rem;
+      height: 9rem;
+      &.top-left {
+        position: absolute;
+        width: 11rem;
+        height: 15rem;
+        top: -9.5rem;
+        left: -5rem;
+      }
+      &.center {
+        position: absolute;
+        width: 11rem;
+        height: 15rem;
+        top: 30%;
+        left: 40%;
+      }
+    }
+  }
+}
+@media (max-width: $screen_sm) {
+  .video {
+    #play-button-icon {
+      &.center,
+      &.top-left {
+        width: 11rem;
+        height: 11rem;
+      }
+      &.top-left {
+        top: -5.5rem;
+        left: -3rem;
+      }
     }
   }
 }

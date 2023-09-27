@@ -8,7 +8,9 @@
  $green: #0FF7A4;
  $lightblue: #00F0FC;
  $darkgrey: #262626;
+ $lightgrey: #F2F2F2;
  $grey: #BFBFBF;
+ $purple: #393EAD;
  $gradient: linear-gradient(90deg, rgba(15,247,164,1) 0%, rgba(0,240,252,1) 100%);
 
  
@@ -17,7 +19,9 @@
  */
  $font-heading: 'Poppins', sans-serif;
  $font-content: 'Poppins', sans-serif;
- $font-highlight: 'Montserrat', sans-serif;;
+ $font-highlight: 'Montserrat', sans-serif;
+ $font-brand: "good-times", sans-serif;
+
  
  /**
   * Screen sizes.
@@ -33,24 +37,24 @@
  $screen_laptop: $screen_lg;
  $screen_desktop: $screen_xl;
  
- @media (min-width: $screen_xs) {
+ @media (max-width: $screen_xs) {
  }
  
- @media (min-width: $screen_sm) {
+ @media (max-width: $screen_sm) {
  }
  
- @media (min-width: $screen_md) {
+ @media (max-width: $screen_md) {
  }
  
- @media (min-width: $screen_lg) {
+ @media (max-width: $screen_lg) {
  }
  
- @media (min-width: $screen_xl) {
+ @media (max-width: $screen_xl) {
  }
  
- @media (min-width: $screen_2xl) {
+ @media (max-width: $screen_2xl) {
  }
  
- @media (min-width: $screen_3xl) {
+ @media (max-width: $screen_3xl) {
  }
  

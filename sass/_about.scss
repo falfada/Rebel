@@ -1,0 +1,43 @@
+.about{
+    &-container{
+        border: 1px solid $darkgrey;
+        border-radius: 8px;
+        transition: all .3s;
+        padding: 2.4rem 3.2rem;
+        &:first-child{
+            padding: 3.2rem 4rem;
+            grid-area: 1 / 1 / span 1 / span 2;
+        }
+        &:last-child{
+            padding: 3.2rem 4rem;
+            grid-area: 2 / 3 / span 1 / span 2;
+        }
+        span.material-symbols-outlined{
+            font-size: 4rem;
+            transition: all .3s;
+        }
+        h3, p{
+            transtion: all .3s;
+        }
+        &:hover{
+            background: $darkgrey;
+            span.material-symbols-outlined, h4{
+                color: $green;
+            }
+            p{
+                color: white;
+            }
+        }
+    }
+}
+@media (max-width: $screen_md) {
+    .about{
+        &-container{
+            padding: 2.4rem 1.6rem;
+            &:first-child, &:last-child{
+                grid-area: auto;
+                padding: 2.4rem 1.6rem;
+            }
+        }
+    }
+}

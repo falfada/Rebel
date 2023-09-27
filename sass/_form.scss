@@ -1,0 +1,179 @@
+.form{
+    &-bg{
+        width: 100%;
+        background: url('../img/form/form-bg.png') center top no-repeat;
+        background-size: 100% auto;
+        padding-top: 12rem;
+    }
+    &-container{
+        width: 90%;
+        max-width: 1088px;
+        margin: auto;
+    }
+    &-progress{
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        .line{
+            width: calc(100% - 11%);
+            height: 1px;
+            background: $lightgrey;
+            position: absolute;
+            left: 50%;
+            top: 30%;
+            transform: translate(-50%);
+        }
+        .step-number{
+            p:first-child{
+               width: 4rem;
+               line-height: 4rem;
+                background: $lightgrey;
+                font-size: 2.8rem;
+                font-family:  $font-brand;
+                border-radius: 100%;
+                position: relative;
+                z-index: 2;
+                font-weight: 700;
+                margin: auto;
+                font-size: 1.6rem;
+            }
+            &.active{
+                p{
+                    &:first-child{
+                        background: $darkgrey;
+                        color: $green;
+                        width: 5.4rem;
+                        line-height: 5.4rem;
+                        font-size: 2.8rem;
+                    }
+                    &:nth-child(2){
+                        font-weight: 800;
+                    }
+                }
+            }
+        }
+    }
+    &-white-container{
+        background: white;
+        box-shadow: 3px 3px 25px rgba($grey, .3);
+        padding: 8rem 8.8rem 9.6rem 8.8rem;
+        .step{
+            display: none;
+        }
+    }
+    &-two-col{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3.2rem;
+        p{
+            grid-area: 1 / 1 / 2 / 3;
+        }
+    }
+}
+input[type="text"]{
+    appearance: none;
+    width: 100%;
+    height: 48px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 4px solid $darkgrey;
+    border-radius: 4px;
+    &:focus{
+        border-color: $green;
+    }
+}
+select{
+    width: 100%;
+    height: 48px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 4px solid $darkgrey;
+    border-radius: 4px;
+    font-size: 1.6rem;
+
+}
+.input-file{
+    display: none;
+}
+.custom-file-input{
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    line-height: 140px;
+    border: 1px dashed $darkgrey;
+    text-align: center;
+    border-radius: 8px;
+    border-spacing: 10px;
+}
+.otherOptionContainer{
+    display: none;
+}
+@media (max-width: $screen_2xl) {
+    .form{
+        &-bg{
+            background-size: 150% auto;
+        }
+        &-white-container{
+            padding: 4rem  4.8rem;
+        }
+    }
+}
+@media (max-width: $screen_xl) {
+    .form{
+        &-bg{
+            background-size: auto 40%;
+        }
+    }
+}
+@media (max-width: $screen_md) {
+    .form{
+        &-progress{
+            .line{
+                width: calc(100% - 9%);
+                top: 60%;
+            }
+            .step-number{
+                &.active{
+                    p{
+                        &:first-child{
+                            width: 4rem;
+                            line-height: 4rem;
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+                p{
+                    &:first-child{
+                        width: 3.2rem;
+                        line-height: 3.2rem;
+                    }
+                    &:nth-child(2){
+                        display: none;
+                    }
+                }
+            }
+        }
+        &-bg{
+            padding-top: 8.8rem;
+        }
+        &-two-col{
+            grid-template-columns: 1fr;
+            gap: 1.6rem;
+            p{
+                grid-area: auto;
+            }
+        }
+    }
+    input[type="text"], select{
+        height: 32px;
+        border-bottom: 2px solid #262626;
+        border-radius: 2px;
+    }
+    .custom-file-input{
+        line-height: 80px;
+    }
+}
