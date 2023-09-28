@@ -159,7 +159,7 @@ $(document).ready(function () {
       disableOnInteraction: false,
     },
     slidesPerView: "auto",
-    speed: 5000,
+    speed: 8000,
     grabCursor: true,
     spaceBetween: 16,
     //mousewheelControl: true,
@@ -190,7 +190,7 @@ $(document).ready(function () {
       disableOnInteraction: false,
     },
     slidesPerView: "auto",
-    speed: 8000,
+    speed: 10000,
     grabCursor: true,
     spaceBetween: 16,
     //mousewheelControl: true,
@@ -241,16 +241,16 @@ $(document).ready(function () {
    */
   $(".pricing-options input").change(function () {
     let interval = $(this).val();
-    if ($(".pricing-options").hasClass("quaterly")) {
-      $(".pricing-options").removeClass("quaterly");
-      $(".pricing-options").addClass(interval);
-      $(".price .quaterly").removeClass("selected");
-      $(".price .monthly").addClass("selected");
-    } else {
+    if ($(".pricing-options").hasClass("monthly")) {
       $(".pricing-options").removeClass("monthly");
       $(".pricing-options").addClass(interval);
       $(".price .monthly").removeClass("selected");
       $(".price .quaterly").addClass("selected");
+    } else {
+      $(".pricing-options").removeClass("quaterly");
+      $(".pricing-options").addClass(interval);
+      $(".price .quaterly").removeClass("selected");
+      $(".price .monthly").addClass("selected");
     }
   });
 

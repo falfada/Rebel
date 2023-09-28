@@ -4,11 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pricing</title>
-    <!-- Links Slick CSS -->
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/lca3ugm.css" />
-    <!-- Links Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,6 +14,15 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap"
       rel="stylesheet"
     />
+    <!-- Favicon -->
+    <link rel="icon" sizes="192x192" href="img/general/android-chrome-192x192.png" />
+    <link rel="icon" sizes="512x512" href="img/general/android-chrome-512x512.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/general/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/general/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/general/favicon-16x16.png" />
+    <link rel="icon" type="image/x-icon" href="img/general/favicon-16x16.png" />
+    <!-- Link Adobe Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/lca3ugm.css">
     <!-- Link Google Icons -->
     <link
       rel="stylesheet"
@@ -63,185 +67,237 @@
       </ul>
     </header>
     <!--Pricing-->
-    <section class="pricing-home">
+    <section class="pricing">
       <div class="container text-center">
         <h2 class="text-center text-5xl col-9 col-lg-12 m-auto">
-          Hire Your
-          <span class="mark gradient"><span>Top Video Editor</span></span>
+          Hire Your <span class="mark gradient"><span>Top Video Editor</span></span>
           <span class="text-4xl d-block">For a Monthly Subscription Fee </span>
         </h2>
-        <div class="pricing-options quaterly">
+        <div class="pricing-options monthly">
           <label class="monthly">
-            <input type="radio" name="interval-pricing" value="monthly" />
+            <input type="radio" name="interval-pricing" value="monthly" checked>
             Monthly Plan
           </label>
-          <label class="quaterly">
-            <input
-              type="radio"
-              name="interval-pricing"
-              value="quaterly"
-              checked
-            />
+          <label class="quaterly" >
+            <input type="radio" name="interval-pricing" value="quaterly">
             Quaterly <span>10% off</span>
           </label>
         </div>
-        <div
-          class="d-flex justify-center align-center text-left gap-16 gap-md-32 mt-72"
-        >
-          <div class="col-4 col-lg-5 col-md-12 pricing-container lightblue" data-aos="fade-up">
-            <span class="material-symbols-outlined"> flag </span>
-            <h3 class="text-3xl mt-16">Starter</h3>
-            <p class="text-lg mt-24 col-10">
+        <div class="d-flex justify-center align-center text-left gap-16 gap-md-32 mt-48">
+          <div class="col-4 col-2xl-5 col-md-12 pricing-container lightblue" data-aos="fade-up">
+            <span class="material-symbols-outlined">
+              flag
+              </span>
+            <h3 class="text-2xl mt-16">Starter</h3>
+            <p class="text-md mt-16 col-10">
               Part Time dedicated editor 20 Hours/week
             </p>
-            <div class="mt-16 d-flex align-baseline gap-16">
+            <div class="d-flex align-baseline gap-16">
               <div class="price">
-                <p class="monthly text-5xl font-800">$1.650</p>
-                <p class="quaterly selected text-5xl font-800">$1.500</p>
+                <p class="monthly selected text-4xl font-800">$1.500</p>
+                <p class="quaterly  text-4xl font-800">$1.350</p>
               </div>
               <p class="text-sm">per month</p>
             </div>
             <ul>
               <li class="d-flex align-center gap-16 gap-sm-0">
-                <span class="material-symbols-outlined"> check_circle </span>
-                Unlimited changes
+                <span class="material-symbols-outlined">
+                  check_circle
+                  </span>
+                  Unlimited changes
               </li>
               <li class="mt-24 d-flex align-center gap-16 gap-sm-0">
-                <span class="material-symbols-outlined"> check_circle </span>
-                24-48h first draft - Same day revisions
+                <span class="material-symbols-outlined">
+                  check_circle
+                  </span>
+                  24-48h first draft - Same day revisions
               </li>
               <li class="mt-24 d-flex align-center gap-16 gap-sm-0">
-                <span class="material-symbols-outlined"> check_circle </span>
-                Within-Hour Communication
+                <span class="material-symbols-outlined">
+                  check_circle
+                  </span>
+                  Within-Hour Communication
               </li>
               <li class="mt-24 d-flex align-center gap-16 gap-sm-0">
-                <span class="material-symbols-outlined"> check_circle </span>
-                Project Manager
+                <span class="material-symbols-outlined">
+                  check_circle
+                  </span>
+                  Project Manager
               </li>
               <li class="mt-24 d-flex align-center gap-16 gap-sm-0">
-                <span class="material-symbols-outlined"> check_circle </span>
-                Basic animations & motion graphics
+                <span class="material-symbols-outlined">
+                  check_circle
+                  </span>
+                  Basic animations & motion graphics
               </li>
               <li class="mt-24 d-flex -align-center gap-16 pricing-more">
-                <span class="text-underline"> View more </span>
-                <span class="material-symbols-outlined"> expand_more </span>
+                <span class="text-underline">
+                  View more 
+                </span>
+                <span class="material-symbols-outlined">
+                  expand_more
+                  </span>
               </li>
               <div class="mt-24 hidden-items">
                 <li class="d-flex align-center gap-16 gap-sm-0">
-                  <span class="material-symbols-outlined"> check_circle </span>
-                  30gb Upload to Cloud Storage
+                  <span class="material-symbols-outlined">
+                    check_circle
+                    </span>
+                    30gb Upload to Cloud Storage
                 </li>
 
                 <li class="mt-24 d-flex align-center gap-16 gap-sm-0">
-                  <span class="material-symbols-outlined"> check_circle </span>
-                  Color Grading
+                  <span class="material-symbols-outlined">
+                    check_circle
+                    </span>
+                    Color Grading
                 </li>
 
                 <li class="mt-24 d-flex align-center gap-16 gap-sm-0">
-                  <span class="material-symbols-outlined"> check_circle </span>
-                  Frame.io revision tool
+                  <span class="material-symbols-outlined">
+                    check_circle
+                    </span>
+                    Frame.io revision tool
                 </li>
 
                 <li class="mt-24 d-flex align-center gap-16 gap-sm-0">
-                  <span class="material-symbols-outlined"> check_circle </span>
-                  Multicam Editing
+                  <span class="material-symbols-outlined">
+                    check_circle
+                    </span>
+                    Multicam Editing
                 </li>
 
                 <li class="mt-24 d-flex align-center gap-16 gap-sm-0">
-                  <span class="material-symbols-outlined"> check_circle </span>
-                  Premiere Project Files
+                  <span class="material-symbols-outlined">
+                    check_circle
+                    </span>
+                    Premiere Project Files
                 </li>
 
                 <li class="mt-24 d-flex align-center gap-16 gap-sm-0">
-                  <span class="material-symbols-outlined"> check_circle </span>
-                  Licensed Music & Footage
+                  <span class="material-symbols-outlined">
+                    check_circle
+                    </span>
+                    Licensed Music & Footage
                 </li>
 
                 <li class="mt-24 d-flex align-center gap-16 gap-sm-0">
-                  <span class="material-symbols-outlined"> check_circle </span>
-                  Audio enhancement
+                  <span class="material-symbols-outlined">
+                    check_circle
+                    </span>
+                    Audio enhancement
                 </li>
               </div>
             </ul>
           </div>
-          <div
-            class="col-4 col-lg-5 col-md-12 pricing-container green recommended"
-           data-aos="fade-up" data-aos-delay="80">
-            <span class="material-symbols-outlined"> rocket </span>
-            <h3 class="text-3xl mt-16">Pro</h3>
-            <p class="text-lg mt-24 col-10">
+          <div class="col-4 col-2xl-5 col-md-12 pricing-container green recommended" data-aos="fade-up" data-aos-delay="80">
+            <span class="material-symbols-outlined">
+              rocket
+              </span>
+            <h3 class="text-2xl mt-16">Pro</h3>
+            <p class="text-md mt-16 col-10">
               Full-Time dedicated editor 40 Hours/week
             </p>
-            <div class="mt-16 d-flex align-baseline gap-16">
+            <div class="d-flex align-baseline gap-16">
               <div class="price">
-                <p class="monthly text-5xl font-800">$2.640</p>
-                <p class="quaterly selected text-5xl font-800">$2.400</p>
+                <p class="monthly selected text-4xl font-800">$2.400</p>
+                <p class="quaterly text-4xl font-800">$2.160</p>
               </div>
               <p class="text-sm">per month</p>
             </div>
             <ul>
               <li class="d-flex align-center gap-16 gap-sm-0">
-                <span class="material-symbols-outlined"> check_circle </span>
-                Unlimited changes
+                <span class="material-symbols-outlined">
+                  check_circle
+                  </span>
+                  Unlimited changes
               </li>
               <li class="mt-24 d-flex align-center gap-16 gap-sm-0">
-                <span class="material-symbols-outlined"> check_circle </span>
-                24-48h first draft - Same day revisions
+                <span class="material-symbols-outlined">
+                  check_circle
+                  </span>
+                  24-48h first draft - Same day revisions
               </li>
               <li class="mt-24 d-flex align-center gap-16 gap-sm-0">
-                <span class="material-symbols-outlined"> lock_open </span>
-                Real time communication
+                <span class="material-symbols-outlined">
+                  lock_open
+                  </span>
+                  Real time communication 
               </li>
               <li class="mt-24 d-flex align-center gap-16 gap-sm-0">
-                <span class="material-symbols-outlined"> check_circle </span>
-                Project Manager
+                <span class="material-symbols-outlined">
+                  check_circle
+                  </span>
+                  Project Manager
               </li>
               <li class="mt-24 d-flex align-center gap-16 gap-sm-0">
-                <span class="material-symbols-outlined"> lock_open </span>
-                Custom animations & motion graphics
+                <span class="material-symbols-outlined">
+                  lock_open
+                  </span>
+                  Custom animations & motion graphics
               </li>
               <li class="mt-24 d-flex align-center gap-16 gap-sm-0">
-                <span class="material-symbols-outlined"> lock_open </span>
-                Custom Thumbnail design
+                <span class="material-symbols-outlined">
+                  lock_open
+                  </span>
+                  Custom Thumbnail design
               </li>
               <li class="mt-24 d-flex align-center gap-16 gap-sm-0">
-                <span class="material-symbols-outlined"> lock_open </span>
-                2TB Upload to Cloud Storage
+                <span class="material-symbols-outlined">
+                  lock_open
+                  </span>
+                  2TB Upload to Cloud Storage
               </li>
-
+              
               <li class="mt-24 d-flex -align-center gap-16 pricing-more">
-                <span class="text-underline"> View more </span>
-                <span class="material-symbols-outlined"> expand_more </span>
+                <span class="text-underline">
+                  View more 
+                </span>
+                <span class="material-symbols-outlined">
+                  expand_more
+                  </span>
               </li>
               <div class="mt-24 hidden-items">
                 <li class="d-flex align-center gap-16 gap-sm-0">
-                  <span class="material-symbols-outlined"> check_circle </span>
-                  Color Grading
+                  <span class="material-symbols-outlined">
+                    check_circle
+                    </span>
+                    Color Grading
                 </li>
 
                 <li class="mt-24 d-flex align-center gap-16 gap-sm-0">
-                  <span class="material-symbols-outlined"> check_circle </span>
-                  Frame.io revision tool
+                  <span class="material-symbols-outlined">
+                    check_circle
+                    </span>
+                    Frame.io revision tool
                 </li>
 
                 <li class="mt-24 d-flex align-center gap-16 gap-sm-0">
-                  <span class="material-symbols-outlined"> check_circle </span>
-                  Multicam Editing
+                  <span class="material-symbols-outlined">
+                    check_circle
+                    </span>
+                    Multicam Editing
                 </li>
 
                 <li class="mt-24 d-flex align-center gap-16 gap-sm-0">
-                  <span class="material-symbols-outlined"> check_circle </span>
-                  Premiere Project Files
+                  <span class="material-symbols-outlined">
+                    check_circle
+                    </span>
+                    Premiere Project Files
                 </li>
 
                 <li class="mt-24 d-flex align-center gap-16 gap-sm-0">
-                  <span class="material-symbols-outlined"> check_circle </span>
-                  Licensed Music & Footage
+                  <span class="material-symbols-outlined">
+                    check_circle
+                    </span>
+                    Licensed Music & Footage
                 </li>
 
                 <li class="mt-24 d-flex align-center gap-16 gap-sm-0">
-                  <span class="material-symbols-outlined"> check_circle </span>
-                  Audio enhancement
+                  <span class="material-symbols-outlined">
+                    check_circle
+                    </span>
+                    Audio enhancement
                 </li>
               </div>
             </ul>
@@ -1071,26 +1127,24 @@
 
     <footer class="footer">
       <div class="container">
-        <div class="d-flex justify-around">
+        <div class="d-flex justify-between">
           <div class="col-5 col-sm-12">
             <a href="index.html" class="footer-logo">Rebel</a>
-            <a href="getstarted.html" class="button black mt-40 mt-sm-16"
-              >Book a Call</a
-            >
-            <div class="d-flex align-center mt-24 gap-24">
-              <a href="facebook.com" class="ssmm-icon">
+            <a href="getstarted.html" class="button black mt-40 mt-sm-16">Book a Call</a>
+            <div class="col-4 col-sm-12 d-flex align-center justify-center mt-24 gap-24">
+              <a href="https://www.facebook.com/getrebeledits" target="_blank" class="ssmm-icon">
                 <span class="sr-only">Facebook</span>
                 <span class="icon-facebook2"></span>
               </a>
-              <a href="youtube.com" class="ssmm-icon">
+              <a href="https://www.youtube.com/@getrebeledits" class="ssmm-icon" target="_blank">
                 <span class="sr-only">Youtube</span>
                 <span class="icon-youtube"></span>
               </a>
-              <a href="linkedin.com" class="ssmm-icon">
+              <a href="https://www.linkedin.com/company/rebel.talent" class="ssmm-icon" target="_blank">
                 <span class="sr-only">LinkedIn</span>
                 <span class="icon-linkedin2"></span>
               </a>
-              <a href="instagram.com" class="ssmm-icon">
+              <a href="https://www.instagram.com/getrebeledits/" class="ssmm-icon" target="_blank">
                 <span class="sr-only">Instagram</span>
                 <span class="icon-instagram"></span>
               </a>
@@ -1107,9 +1161,7 @@
               <a href="pricing.html" class="text-sm text-black">Pricing</a>
             </div>
             <div class="col-12 mt-40 mt-sm-16">
-              <a href="getstarted.html" class="text-sm text-black"
-                >Get Started</a
-              >
+              <a href="getstarted.html" class="text-sm text-black">Get Started</a>
             </div>
           </div>
           <div class="col-3 col-sm-12 mt-sm-24">
@@ -1117,14 +1169,10 @@
               <span>COMPANY</span>
             </p>
             <div class="col-12 mt-40 mt-sm-16">
-              <a href="terms.html" class="text-sm text-black"
-                >Terms & Conditions</a
-              >
+              <a href="terms.html" class="text-sm text-black">Terms & Conditions</a>
             </div>
             <div class="col-12 mt-40 mt-sm-16">
-              <a href="privacy.html" class="text-sm text-black"
-                >Privacy Policy</a
-              >
+              <a href="privacy.html" class="text-sm text-black">Privacy Policy</a>
             </div>
           </div>
         </div>
