@@ -73,6 +73,21 @@
     }
     
  }
+
+ @media (max-width: $screen_2xl) {
+    .testimonials{
+        .video{
+            height: 45vw;
+        }
+        .client{
+            height: 45vw;
+            p{
+                height: calc(100% - 120px);
+            }
+        }
+    }
+}
+
  @media (max-width: $screen_lg) {
     .clients-logos{
         .swiper-slide{

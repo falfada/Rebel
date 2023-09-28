@@ -11,3 +11,9 @@
         color: $green;
     }
 }
+@media (max-width: $screen_xl) {
+    .round-number{
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+}

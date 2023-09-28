@@ -31,6 +31,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.3/lottie.min.js"></script>
     <!-- Link jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      .calendly-container {
+  width: 100%; /* Set the width to 100% of its parent container */
+  height: 700px; /* Set a fixed height of 700px */
+  margin: 0 auto; /* Center the widget horizontally if needed */
+}
+
+/* Adjust the widget's content width to match the container */
+.calendly-inline-widget {
+  width: 100%;
+  height: 100%; /* If you want the widget to take up the full height of the container */
+}
+
+    </style>
   </head>
   <body>
     <header class="header">
@@ -82,11 +96,10 @@
                   <img src="https://placehold.co/600x400" alt="" class="col-12">                  
             </div>
           </div>
-          <div class="col-4 col-md-12 mt-md-24">
+          <div class="col-5 col-md-12 mt-md-24">
             <div
               class="calendly-inline-widget"
               data-url="https://calendly.com/daniel-rebel/30min?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=00ffcc"
-              style="min-width: 320px; height: 700px"
             ></div>
             <script
               type="text/javascript"
@@ -107,31 +120,31 @@
         <div class="d-grid grid-col-3 grid-lg-col-1 gap-16 mt-72">
           <div class="grain green text-lg-center" data-aos="fade-up">
             <div class="d-flex gap-16 justify-lg-center align-center">
-              <div class="round-number black text-xl">1</div>
-              <h3 class="text-2xl font-800">Send us your footage</h3>
+              <div class="round-number black text-md">1</div>
+              <h3 class="text-lg font-800">Send us your footage</h3>
             </div>
-            <img src="img/home/step1.png" alt="" class="mt-16">
-            <p class="text-xl mt-40">
+            <img src="img/home/step1.png" alt="" class="mt-16" style="width: 90%; margin: auto; display: block;">
+            <p class="text-md mt-40">
               Provide us the necessary project details and assets.
             </p>
           </div>
           <div class="grain blue text-lg-center" data-aos="fade-up" data-aos-delay="100">
             <div class="d-flex gap-16 justify-lg-center align-center">
-              <div class="round-number black text-xl">2</div>
-              <h3 class="text-2xl font-800">Review your first draft</h3>
+              <div class="round-number black text-md">2</div>
+              <h3 class="text-lg font-800">Review your first draft</h3>
             </div>
-            <img src="img/home/step2.png" alt="" class="mt-16">
-            <p class="text-xl mt-40">
+            <img src="img/home/step2.png" alt="" class="mt-16" style="width: 90%; margin: auto; display: block;">
+            <p class="text-md mt-40">
               Within 24-48 hours, you will receive the initial draft of your video. You can make unlimited changes! 
             </p>
           </div>
           <div class="grain lightblue text-lg-center" data-aos="fade-up" data-aos-delay="180">
             <div class="d-flex gap-16 justify-lg-center align-center">
-              <div class="round-number black text-xl">3</div>
-              <h3 class="text-2xl font-800">Get your perfect video</h3>
+              <div class="round-number black text-md">3</div>
+              <h3 class="text-lg font-800">Get your perfect video</h3>
             </div>
-            <img src="img/home/step3.png" alt="" class="mt-16">
-            <p class="text-xl mt-40">
+            <img src="img/home/step3.png" alt="" class="mt-16" style="width: 90%; margin: auto; display: block;">
+            <p class="text-md mt-40">
               Once it’s ready, you can easily download your kick-Ass video. 
             </p>
           </div>

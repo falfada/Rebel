@@ -99,6 +99,19 @@ $gridCol: 1;
      $col: $col + 1;
    }
  }
+ /**
+ * Grid Columns.
+ */
+ .grid {
+  &-2xl {
+    @while $gridCol <= 12 {
+      &-col-#{$gridCol} {
+        grid-template-columns: repeat($gridCol, 1fr);
+      }
+      $gridCol: $gridCol + 1;
+    }
+  }
+}
 }
 @media (max-width: $screen_xl){
    /**

@@ -104,7 +104,19 @@ $lineHeight: 1;
     $lineHeight: $lineHeight + 1;
   }
 }
-
+@media (max-width: $screen_2xl) {
+  .text{
+     /**
+ * Font size.
+ */
+  &-5xl {
+    font-size: 6.4rem;
+  }
+  &-4xl {
+    font-size: 5.6rem;
+  }
+  }
+}
 @media (max-width: $screen_lg) {
   .text {
     /**

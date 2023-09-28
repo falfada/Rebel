@@ -38,6 +38,7 @@
       span {
         font-weight: 800;
         color: $purple;
+        display: block;
       }
       input[type="radio"] {
         appearance: none;
@@ -139,6 +140,15 @@
     }
   }
 }
+@media (max-width: $screen_2xl) {
+  .pricing{
+    &-options{
+      width: 35%;
+      align-items: center;
+    }
+  }  
+}
+
 @media (max-width: $screen_lg) {
   .pricing{
     &-options{

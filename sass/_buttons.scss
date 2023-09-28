@@ -47,7 +47,7 @@
     &.outline{
         
         &-black{
-            background: white;
+            background: transparent;
             border: 1px solid $darkgrey;
             &:hover{
                 border: 1px solid transparent;
