@@ -237,7 +237,9 @@ $repeater_questions = 'repeater_questions';
         <?php endif; ?>
     </div>
     <div class="d-flex justify-between mt-120 mt-lg-64">
-        <img src="<?= esc_url($left_image_about['url']) ?>" class="position-absolute bottom left d-lg-none" style="width: 30vw; max-width: 550px" alt="<?= esc_attr($left_image_about['alt']) ?>" />
+        <?php if ($left_image_about) : ?>
+            <img src="<?= esc_url($left_image_about['url']) ?>" class="position-absolute bottom left d-lg-none" style="width: 30vw; max-width: 550px" alt="<?= esc_attr($left_image_about['alt']) ?>" />
+        <?php endif; ?>
         <div class="col-7 m-auto text-center">
             <p class="text-4xl font-800 text-capitalize"><?= $text_about ?></p>
             <?php if ($button_about) :
@@ -248,7 +250,9 @@ $repeater_questions = 'repeater_questions';
                 <a href="<?= esc_url($link_url); ?>" class="button black mt-40" target="<?= esc_attr($link_target); ?>"><?= esc_html($link_title); ?></a>
             <?php endif ?>
         </div>
-        <img src="<?= esc_url($right_image_about['url']) ?>" class="position-absolute bottom right d-lg-none" style="width: 34vw; max-width: 639px" alt="<?= esc_attr($right_image_about['alt']) ?>" />
+        <?php if ($right_image_about) : ?>
+            <img src="<?= esc_url($right_image_about['url']) ?>" class="position-absolute bottom right d-lg-none" style="width: 34vw; max-width: 639px" alt="<?= esc_attr($right_image_about['alt']) ?>" />
+        <?php endif; ?>
     </div>
 </section>
 
@@ -257,14 +261,16 @@ $repeater_questions = 'repeater_questions';
     <div class="container text-center">
         <h2 class="text-center text-5xl col-9 col-lg-12 m-auto"><?= $title_pricing ?></h2>
         <div class="pricing-options monthly">
-            <label class="monthly">
-                <input type="radio" name="interval-pricing" value="monthly" checked />
-                <?= $group_options_pricing['montly'] ?>
-            </label>
-            <label class="quaterly">
-                <input type="radio" name="interval-pricing" value="quaterly" />
-                <?= $group_options_pricing['quaterly'] ?>
-            </label>
+            <?php if ($group_options_pricing) : ?>
+                <label class="monthly">
+                    <input type="radio" name="interval-pricing" value="monthly" checked />
+                    <?= $group_options_pricing['montly'] ?>
+                </label>
+                <label class="quaterly">
+                    <input type="radio" name="interval-pricing" value="quaterly" />
+                    <?= $group_options_pricing['quaterly'] ?>
+                </label>
+            <?php endif; ?>
         </div>
         <?php if (have_rows($repeater_plans_pricing)) : ?>
             <div class="d-flex justify-center align-center text-left gap-16 gap-md-32 mt-48">
@@ -370,7 +376,9 @@ $repeater_questions = 'repeater_questions';
                     <a href="<?= esc_url($link_url); ?>" class="button gradient mt-56 mt-lg-16" target="<?= esc_attr($link_target); ?>"><?= esc_html($link_title); ?></a>
                 <?php endif ?>
             </div>
-            <img src="<?= esc_url($bottom_image_how_it_works['url']) ?>" alt="<?= esc_url($bottom_image_how_it_works['alt']) ?>" class="position-absolute bottom right d-lg-none" />
+            <?php if ($bottom_image_how_it_works) : ?>
+                <img src="<?= esc_url($bottom_image_how_it_works['url']) ?>" alt="<?= esc_url($bottom_image_how_it_works['alt']) ?>" class="position-absolute bottom right d-lg-none" />
+            <?php endif; ?>
         </div>
     </div>
 </section>
