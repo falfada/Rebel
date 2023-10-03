@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes() ?>>
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="<?php bloginfo('charset') ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rebel</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
@@ -30,9 +29,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.3/lottie.min.js"></script>
     <!-- Link jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>
+        <?php
+        global $page, $paged;
+
+        wp_title('-', true, 'right');
+        bloginfo('name');
+
+        $site_description = get_bloginfo('description', 'display');
+
+        if ($site_description && (is_home() || is_front_page()))
+            echo " - $site_description";
+        ?>
+    </title>
+    <?php wp_head() ?>
 </head>
 
-<body>
+<body <?php body_class() ?>>
     <?php if (is_front_page()) : ?>
         <!-- Lottie Animation -->
         <div id="pageLoader">
