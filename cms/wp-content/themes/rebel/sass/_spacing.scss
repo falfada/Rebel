@@ -26,6 +26,23 @@ $paddingValue: 16;
     $paddingValue: $paddingValue + 8;
   }
 }
+@media (max-width: $screen_2xl) {
+  /**
+ * Margin.
+ */
+  .m {
+    &-2xl-auto {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @while $marginValue <= 120 {
+      &t-2xl-#{$marginValue} {
+        margin-top: #{$marginValue / 10}rem;
+      }
+      $marginValue: $marginValue + 8;
+    }
+  }
+}
 @media (max-width: $screen_lg) {
   /**
  * Margin.

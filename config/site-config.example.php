@@ -18,7 +18,7 @@ return [
     /** Database. */
     'DB_CHARSET' => 'utf8mb4',
     'DB_COLLATE' => 'utf8mb4_general_ci',
-    'DB_HOST' => 'localhost',
+    'DB_HOST' => '127.0.0.1',
     'DB_NAME' => 'rebel_local',
     'DB_PASSWORD' => '',
     'DB_TABLE_PREFIX' => 'cms_',
