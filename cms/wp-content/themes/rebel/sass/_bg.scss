@@ -115,6 +115,9 @@
       bottom: -51%;
     }
   }
+  .hero{
+    padding-top: 8rem;
+  }
 }
 @media (max-width: $screen_xl) {
   .grain{
@@ -123,9 +126,7 @@
       width: 100%;
     }
   }
-  .hero{
-    padding-top: 11rem;
-  }
+  
 }
 
 @media (max-width: $screen_lg) {

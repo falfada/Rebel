@@ -99,7 +99,14 @@ header {
 .menu-toggle {
   display: none;
 }
-
+@media (max-width: $screen_2xl) {
+  header{
+    .logo{
+      width: 106px;
+      height: 40px;
+    }
+  }
+}
 @media (max-width: $screen_md) {
   .menu-toggle {
     display: block;

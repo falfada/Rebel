@@ -50,8 +50,8 @@ if (is_front_page()) :
             <div class="d-flex position-relative">
                 <div class="col-8 col-md-12">
                     <h1 class="text-5xl"><?= $main_title_hero ?></h1>
-                    <p class="text-xl mt-40 mt-md-24 col-10 col-xl-12 line-2"><?= $description_hero ?></p>
-                    <div class="d-flex gap-16 mt-48 mt-md-24">
+                    <p class="text-xl mt-40 mt-2xl-24 col-10 col-xl-12 line-2"><?= $description_hero ?></p>
+                    <div class="d-flex gap-16 mt-48 mt-2xl-24">
                         <?php if ($first_button_hero) :
                             $link_url = $first_button_hero['url'];
                             $link_title = $first_button_hero['title'];
