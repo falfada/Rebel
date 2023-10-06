@@ -3,18 +3,7 @@
   height: 100vh;
   background: url("../img/home/bg-hero.png") center top no-repeat;
   background-size: 100% auto;
-  .container{
-    display: flex;
-    flex-wrap: wrap;
-    height: 100%;
-    &>div{
-      align-content: center;
-      #play-button-container{
-        top: 50%;
-        transform: translateY(-50%);
-      }
-    }
-  }
+  padding-top: 15rem;
 }
 .pricing {
   &-home {

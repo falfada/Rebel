@@ -50,8 +50,8 @@ if (is_front_page()) :
             <div class="d-flex position-relative">
                 <div class="col-8 col-md-12">
                     <h1 class="text-5xl"><?= $main_title_hero ?></h1>
-                    <p class="text-xl mt-24 col-10 col-xl-12 line-2"><?= $description_hero ?></p>
-                    <div class="d-flex gap-16 mt-24">
+                    <p class="text-lg met-40 mt-2xl-24 col-10 col-xl-12 line-2"><?= $description_hero ?></p>
+                    <div class="d-flex gap-16 mt-48 mt-2xl-24">
                         <?php if ($first_button_hero) :
                             $link_url = $first_button_hero['url'];
                             $link_title = $first_button_hero['title'];
@@ -69,7 +69,7 @@ if (is_front_page()) :
                     </div>
                 </div>
                 <?php if ($video_hero) : ?>
-                    <div id="play-button-container" class="showVideo video m-auto col-5 col-md-12 position-md-relative position-absolute right" data-video-url="<?= esc_url($video_hero['url']) ?>">
+                    <div id="play-button-container" class="showVideo video m-auto mt-64 col-5 col-md-12 position-md-relative position-absolute right top" data-video-url="<?= esc_url($video_hero['url']) ?>">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="play-button-icon" class="center" width="100%" height="100%">
                             <defs>
                                 <linearGradient id="linear-gradient" x1="0.254" y1="0.5" x2="1" y2="1" gradientUnits="objectBoundingBox">
