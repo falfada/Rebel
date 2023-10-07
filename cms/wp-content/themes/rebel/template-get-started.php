@@ -102,7 +102,7 @@ $repeater_carousel_client_two = 'repeater_carousel_client_two';
                     $position_author = get_sub_field('position_author');
                 ?>
                     <div class="swiper-slide client <?= $background_color ?> col-3">
-                        <p class="text-lg font-700">“<?= $testimonial_author ?>”</p>
+                        <p class="text-md font-700">“<?= $testimonial_author ?>”</p>
                         <div class="mt-16 d-flex justify-between align-center">
                             <img src="<?= esc_url($photo_autor['url']) ?>" alt="<?= esc_attr($photo_autor['alt']) ?>" width="72" height="72" class="d-sm-none" />
                             <p class="col-9 col-sm-12">
@@ -152,7 +152,7 @@ $repeater_carousel_client_two = 'repeater_carousel_client_two';
                     $position_author = get_sub_field('position_author');
                 ?>
                     <div class="swiper-slide client <?= $background_color ?> col-3">
-                        <p class="text-lg font-700">“<?= $testimonial_author ?>”</p>
+                        <p class="text-md font-700">“<?= $testimonial_author ?>”</p>
                         <div class="mt-16 d-flex justify-between align-center">
                             <img src="<?= esc_url($photo_autor['url']) ?>" alt="<?= esc_attr($photo_autor['alt']) ?>" width="72" height="72" class="d-sm-none" />
                             <p class="col-9 col-sm-12">

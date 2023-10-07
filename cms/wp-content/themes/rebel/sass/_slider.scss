@@ -89,6 +89,11 @@
             p{
                 height: calc(100% - 120px);
             }
+            &.swiper-slide{
+                img{
+                    width: 18%;
+                }
+            }
         }
     }
 }

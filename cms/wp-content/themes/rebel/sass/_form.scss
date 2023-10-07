@@ -66,14 +66,6 @@
       }
     }
   }
-  &-two-col {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3.2rem;
-    p {
-      grid-area: 1 / 1 / 2 / 3;
-    }
-  }
 }
 input[type='text'] {
   appearance: none;
@@ -105,7 +97,7 @@ select {
   position: relative;
   cursor: pointer;
   width: 100%;
-  line-height: 140px;
+  line-height: 80px;
   border: 1px dashed $darkgrey;
   text-align: center;
   border-radius: 8px;
@@ -113,6 +105,16 @@ select {
 }
 .otherOptionContainer {
   display: none;
+}
+/**
+* Contact Form 7
+*/
+.wpcf7-form-control{
+  &.wpcf7-checkbox{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.2rem;
+  }
 }
 @media (max-width: $screen_2xl) {
   .form {

@@ -291,7 +291,7 @@ $group_compare_data_by_column = [];
                     $position_author = get_sub_field('position_author');
                 ?>
                     <div class="swiper-slide client <?= $background_color ?> col-3">
-                        <p class="text-lg font-700">“<?= $testimonial_author ?>”</p>
+                        <p class="text-md font-700">“<?= $testimonial_author ?>”</p>
                         <div class="mt-16 d-flex justify-between align-center">
                             <img src="<?= esc_url($photo_autor['url']) ?>" alt="<?= esc_attr($photo_autor['alt']) ?>" width="72" height="72" class="d-sm-none" />
                             <p class="col-9 col-sm-12">
@@ -341,7 +341,7 @@ $group_compare_data_by_column = [];
                     $position_author = get_sub_field('position_author');
                 ?>
                     <div class="swiper-slide client <?= $background_color ?> col-3">
-                        <p class="text-lg font-700">“<?= $testimonial_author ?>”</p>
+                        <p class="text-md font-700">“<?= $testimonial_author ?>”</p>
                         <div class="mt-16 d-flex justify-between align-center">
                             <img src="<?= esc_url($photo_autor['url']) ?>" alt="<?= esc_attr($photo_autor['alt']) ?>" width="72" height="72" class="d-sm-none" />
                             <p class="col-9 col-sm-12">
@@ -380,7 +380,7 @@ $group_compare_data_by_column = [];
 <section class="mt-96">
     <div class="container">
         <div class="d-flex justify-between">
-            <div class="col-5 col-lg-12 position-sticky position-lg-relative align-self-start">
+            <div class="col-5 col-2xl-4 col-lg-12 position-sticky position-lg-relative align-self-start">
                 <p class="mark green text-sm font-800">
                     <span><?= $pre_title_faq ?></span>
                 </p>

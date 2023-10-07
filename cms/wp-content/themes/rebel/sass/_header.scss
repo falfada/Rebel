@@ -8,6 +8,7 @@ header {
     background: $darkgrey;
     .logo{
         background: url("../img/general/logo-color.svg") center no-repeat;
+        background-size: cover;
     }
     .nav-link{
         color: white;
