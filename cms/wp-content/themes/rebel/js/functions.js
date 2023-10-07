@@ -18,7 +18,7 @@ $(document).ready(function () {
    * Other Option Form.
    */
 
-  $('.trigger-input').on('change', function () {
+  $('.trigger-input select').on('change', function () {
     const triggerValue = $(this).val();
     if (triggerValue === 'other') {
       $(this)
