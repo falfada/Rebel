@@ -67,10 +67,8 @@
     }
   }
   &-button-container{
-    p{
-      display: flex;
-      justify-content: justify-between;
-    }
+    display: flex;
+    justify-content: space-between;
   }
 }
 input[type="text"] {
