@@ -18,21 +18,16 @@ $(document).ready(function () {
    * Other Option Form.
    */
 
-  $('.trigger-input select').on('change', function () {
+  $('.wpcf7-form-control-wrap select').on('change', function () {
     const triggerValue = $(this).val();
-    if (triggerValue === 'other') {
-      $(this)
-        .closest('div')
-        .find('.otherOptionContainer')
-        .css({ display: 'block' });
-    } else {
-      $(this)
-        .closest('div')
-        .find('.otherOptionContainer')
-        .css({ display: 'none' });
+    const grandparentContainer = $(this).closest("p");
+    if(triggerValue === 'Other'){
+      let otherOptionContainer = grandparentContainer.next().css({ display: "block" });
+    } else{
+      let otherOptionContainer = grandparentContainer.next().css({ display: "none" });
     }
   });
-
+  
   /**
    * Form Stepper.
    */
