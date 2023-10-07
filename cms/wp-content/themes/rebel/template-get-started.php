@@ -24,14 +24,14 @@ $repeater_carousel_client_two = 'repeater_carousel_client_two';
 ?>
 
 <!-- Schedule a video call -->
-<section class="mt-120">
+<section class="mt-96 mt-2xl-56">
     <div class="container">
-        <div class="d-flex justify-between">
+        <div class="d-flex justify-between align-center">
             <div class="col-7 col-md-12">
                 <h1 class="text-5xl"><?= $title_schedule ?></h1>
                 <p class="text-lg mt-40 line-2"><?= $description_schedule ?></p>
                 <?php if ($video_schedule) : ?>
-                    <div id="play-button-container" class="showVideo video col-10 m-auto mt-64" data-data-video-url="<?= esc_url($video_schedule['url']) ?>">
+                    <div id="play-button-container" class="showVideo video col-8 m-auto mt-64 mt-2xl-48" data-data-video-url="<?= esc_url($video_schedule['url']) ?>">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="play-button-icon" class="top-left">
                             <defs>
                                 <linearGradient id="linear-gradient" x1="0.254" y1="0.5" x2="1" y2="1" gradientUnits="objectBoundingBox">
@@ -47,7 +47,7 @@ $repeater_carousel_client_two = 'repeater_carousel_client_two';
             </div>
             <div class="col-5 col-md-12 mt-md-24">
                 <?php if ($calendly_link_schedule) : ?>
-                    <div class="calendly-inline-widget" data-url="<?= $calendly_link_schedule ?>"></div>
+                    <div class="calendly-inline-widget" data-url="<?= $calendly_link_schedule ?>" style="min-width:320px;height:700px;"></div>
                     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
                 <?php endif; ?>
             </div>

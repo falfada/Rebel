@@ -26,6 +26,16 @@
     transform: translateX(-50%);
   }
 }
+@media (max-width: $screen_2xl) {
+  .benefit{
+    &-container{
+      padding: 5rem 3.2rem 5rem 3.2rem;
+      &:nth-child(3){
+        padding: 5rem 3.2rem 5rem 3.2rem;
+      }
+    }
+  }
+}
 @media (max-width: $screen_md) {
   .benefit {
     &-container {

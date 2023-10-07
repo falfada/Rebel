@@ -88,7 +88,7 @@ if (is_front_page()) :
 
     <!-- Clients Logos -->
     <?php if ($gallery_logos_carousel) : ?>
-        <section class="clients-logos mt-lg-48 swiper-container swiper-container-free-mode">
+        <section class="clients-logos mt-2xl-48 swiper-container swiper-container-free-mode">
             <div class="swiper-wrapper">
                 <?php foreach ($gallery_logos_carousel as $logo) : ?>
                     <div class="swiper-slide">
@@ -114,9 +114,9 @@ if (is_front_page()) :
                         $position_author = get_sub_field('position_author');
                     ?>
                         <div class="swiper-slide client <?= $background_color ?> col-3">
-                            <p class="text-lg font-700">“<?= $testimonial_author ?>”</p>
-                            <div class="mt-16 d-flex justify-between align-center">
-                                <img src="<?= esc_url($photo_autor['url']) ?>" alt="<?= esc_attr($photo_autor['alt']) ?>" width="72" height="72" class="d-sm-none" />
+                            <p class="text-md font-700">“<?= $testimonial_author ?>”</p>
+                            <div class="mt-16 d-flex gap-16 align-center">
+                                <img src="<?= esc_url($photo_autor['url']) ?>" alt="<?= esc_attr($photo_autor['alt']) ?>" class="d-sm-none" />
                                 <p class="col-9 col-sm-12">
                                     <?= $name_author ?>.,
                                     <span class="font-800 d-block"><?= $position_author ?></span>
@@ -164,9 +164,9 @@ if (is_front_page()) :
                         $position_author = get_sub_field('position_author');
                     ?>
                         <div class="swiper-slide client <?= $background_color ?> col-3">
-                            <p class="text-lg font-700">“<?= $testimonial_author ?>”</p>
-                            <div class="mt-16 d-flex justify-between align-center">
-                                <img src="<?= esc_url($photo_autor['url']) ?>" alt="<?= esc_attr($photo_autor['alt']) ?>" width="72" height="72" class="d-sm-none" />
+                            <p class="text-md font-700">“<?= $testimonial_author ?>”</p>
+                            <div class="mt-16 d-flex gap-16 align-center">
+                                <img src="<?= esc_url($photo_autor['url']) ?>" alt="<?= esc_attr($photo_autor['alt']) ?>" class="d-sm-none" />
                                 <p class="col-9 col-sm-12">
                                     <?= $name_author ?>.,
                                     <span class="font-800 d-block"><?= $position_author ?></span>
@@ -202,7 +202,7 @@ if (is_front_page()) :
     <!--Benefits-->
     <?php if (have_rows($repeater_boxes_benefits)) : ?>
         <section class="mt-120 mt-md-80">
-            <div class="container d-grid grid-col-4 grid-2xl-col-2 grid-sm-col-1 gap-16 gap-y-lg-64 gap-x-lg-16">
+            <div class="container d-grid grid-col-4 grid-xl-col-2 grid-sm-col-1 gap-16 gap-y-lg-64 gap-x-lg-16">
                 <?php while (have_rows($repeater_boxes_benefits)) : the_row();
                     $title_benefits = get_sub_field('title_benefits');
                     $description_benefits = get_sub_field('description_benefits');
@@ -210,8 +210,8 @@ if (is_front_page()) :
                 ?>
                     <div class="benefit-container">
                         <img src="<?= $icon_benefits['url'] ?>" alt="<?= $icon_benefits['url'] ?>" class="benefit-img" />
-                        <h3 class="text-3xl font-800" data-aos="fade-up"><?= $title_benefits ?></h3>
-                        <p class="mt-24 text-lg" data-aos="fade-up"><?= $description_benefits ?></p>
+                        <h3 class="text-2xl font-800" data-aos="fade-up"><?= $title_benefits ?></h3>
+                        <p class="mt-24 text-md" data-aos="fade-up"><?= $description_benefits ?></p>
                     </div>
                 <?php endwhile; ?>
             </div>
