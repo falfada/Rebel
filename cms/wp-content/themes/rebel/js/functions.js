@@ -21,7 +21,6 @@ $(document).ready(function () {
   $('.wpcf7-form-control-wrap select').on('change', function () {
     const triggerValue = $(this).val();
     const grandparentContainer = $(this).closest("p");
-    console.log(triggerValue);
     if(triggerValue === 'Other'){
       let otherOptionContainer = grandparentContainer.next().css({ display: "block" });
     } else{
