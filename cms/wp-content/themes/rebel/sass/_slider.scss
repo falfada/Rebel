@@ -51,10 +51,10 @@
     }
     .video{
         &.horizontal{
-            width: 50%;
+            width: 38%;
         }
         &.vertical{
-            width: 25%;
+            width: 17%;
         }
         height: 22vw;
         border-radius: 8px;
@@ -82,6 +82,12 @@
     .testimonials{
         .video{
             height: 30vw;
+            &.horizontal{
+                width: 50%;
+            }
+            &.vertical{
+                width: 25%;
+            }
         }
         .client{
             height: 30vw;
