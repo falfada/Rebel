@@ -118,7 +118,7 @@ if (is_front_page()) :
                             <div class="mt-16 d-flex gap-16 align-center">
                                 <img src="<?= esc_url($photo_autor['url']) ?>" alt="<?= esc_attr($photo_autor['alt']) ?>" class="d-sm-none" />
                                 <p class="col-9 col-sm-12">
-                                    <?= $name_author ?>.,
+                                    <?= $name_author ?>
                                     <span class="font-800 d-block"><?= $position_author ?></span>
                                 </p>
                             </div>
@@ -168,7 +168,7 @@ if (is_front_page()) :
                             <div class="mt-16 d-flex gap-16 align-center">
                                 <img src="<?= esc_url($photo_autor['url']) ?>" alt="<?= esc_attr($photo_autor['alt']) ?>" class="d-sm-none" />
                                 <p class="col-9 col-sm-12">
-                                    <?= $name_author ?>.,
+                                    <?= $name_author ?>
                                     <span class="font-800 d-block"><?= $position_author ?></span>
                                 </p>
                             </div>

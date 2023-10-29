@@ -295,7 +295,7 @@ $group_compare_data_by_column = [];
                         <div class="mt-16 d-flex justify-between align-center">
                             <img src="<?= esc_url($photo_autor['url']) ?>" alt="<?= esc_attr($photo_autor['alt']) ?>" width="72" height="72" class="d-sm-none" />
                             <p class="col-9 col-sm-12">
-                                <?= $name_author ?>.,
+                                <?= $name_author ?>
                                 <span class="font-800 d-block"><?= $position_author ?></span>
                             </p>
                         </div>
@@ -345,7 +345,7 @@ $group_compare_data_by_column = [];
                         <div class="mt-16 d-flex justify-between align-center">
                             <img src="<?= esc_url($photo_autor['url']) ?>" alt="<?= esc_attr($photo_autor['alt']) ?>" width="72" height="72" class="d-sm-none" />
                             <p class="col-9 col-sm-12">
-                                <?= $name_author ?>.,
+                                <?= $name_author ?>
                                 <span class="font-800 d-block"><?= $position_author ?></span>
                             </p>
                         </div>
