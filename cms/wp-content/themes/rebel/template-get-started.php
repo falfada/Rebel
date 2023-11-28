@@ -31,7 +31,7 @@ $repeater_carousel_client_two = 'repeater_carousel_client_two';
                 <h1 class="text-5xl"><?= $title_schedule ?></h1>
                 <p class="text-lg mt-40 line-2"><?= $description_schedule ?></p>
                 <?php if ($video_schedule) : ?>
-                    <div id="play-button-container" class="showVideo video col-8 m-auto mt-64 mt-2xl-48" data-data-video-url="<?= esc_url($video_schedule['url']) ?>">
+                    <div id="play-button-container" class="showVideo video col-8 m-auto mt-64 mt-2xl-48" data-video-url="<?= esc_url($video_schedule['url']) ?>">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="play-button-icon" class="top-left">
                             <defs>
                                 <linearGradient id="linear-gradient" x1="0.254" y1="0.5" x2="1" y2="1" gradientUnits="objectBoundingBox">
