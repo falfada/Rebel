@@ -106,6 +106,9 @@ select {
   text-align: center;
   border-radius: 8px;
   border-spacing: 10px;
+  p.fileName{
+    line-height: 3rem;
+  }
 }
 .otherOptionContainer {
   display: none;
