@@ -429,7 +429,7 @@ if (is_front_page()) :
     <section class="mt-120">
         <div class="container">
             <div class="col-8 m-auto">
-                <h2 class="text-5xl"><?= $page_title ?></h2>
+                <h1 class="text-5xl"><?= $page_title ?></h1>
                 <?php the_content(); ?>
             </div>
         </div>

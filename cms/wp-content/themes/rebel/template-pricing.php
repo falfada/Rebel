@@ -41,7 +41,7 @@ $group_compare_data_by_column = [];
 <!--Pricing-->
 <section class="pricing">
     <div class="container text-center">
-        <h2 class="text-center text-5xl col-9 col-lg-12 m-auto"><?= $title_pricing ?></h2>
+        <h1 class="text-center text-5xl col-9 col-lg-12 m-auto"><?= $title_pricing ?></h1>
         <div class="pricing-options monthly">
             <label class="monthly">
                 <input type="radio" name="interval-pricing" value="monthly" checked />
