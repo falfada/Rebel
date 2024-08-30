@@ -79,7 +79,7 @@ if (is_front_page()) :
                             </defs>
                             <polygon points="20,15 80,50 20,85" />
                         </svg>
-                        <img src="<?= esc_url($cover_video_hero['url']) ?>" alt="<?= esc_attr($cover_video_hero['alt']) ?>" class="col-12" />
+                        <video src="<?= esc_url($cover_video_hero['url']) ?>" class="col-12" autoplay loop muted></video>
                     </div>
                 <?php endif; ?>
             </div>
