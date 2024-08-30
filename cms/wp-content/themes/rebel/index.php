@@ -92,7 +92,7 @@ if (is_front_page()) :
             <div class="swiper-wrapper">
                 <?php foreach ($gallery_logos_carousel as $logo) : ?>
                     <div class="swiper-slide">
-                        <img src="<?= esc_url($logo['url']); ?>" alt="<?= esc_attr($logo['alt']); ?>" />
+                        <img src="<?= esc_url($logo['url']); ?>" alt="<?= esc_attr($logo['alt']); ?>" width="<?= esc_attr($logo['width']); ?>" height="<?= esc_attr($logo['height']); ?>"/>
                     </div>
                 <?php endforeach; ?>
             </div>
@@ -116,7 +116,7 @@ if (is_front_page()) :
                         <div class="swiper-slide client <?= $background_color ?> col-3">
                             <p class="text-md font-700">“<?= $testimonial_author ?>”</p>
                             <div class="mt-16 d-flex gap-16 align-center">
-                                <img src="<?= esc_url($photo_autor['url']) ?>" alt="<?= esc_attr($photo_autor['alt']) ?>" class="d-sm-none" />
+                                <img src="<?= esc_url($photo_autor['url']) ?>" alt="<?= esc_attr($photo_autor['alt']) ?>" width="<?= esc_attr($photo_autor['width']) ?>" height="<?= esc_attr($photo_autor['height']) ?>" class="d-sm-none" />
                                 <p class="col-9 col-sm-12">
                                     <?= $name_author ?>
                                     <span class="font-800 d-block"><?= $position_author ?></span>
@@ -141,7 +141,7 @@ if (is_front_page()) :
                                     <polygon points="20,15 80,50 20,85" />
                                 </svg>
                             </div>
-                            <img src="<?= esc_url($cover_video['url']) ?>" alt="<?= esc_attr($cover_video['alt']) ?>" />
+                            <img src="<?= esc_url($cover_video['url']) ?>" alt="<?= esc_attr($cover_video['alt']) ?>" width="<?= esc_attr($cover_video['width']) ?>" height="<?= esc_attr($cover_video['height']) ?>"/>
                         </div>
                     <?php endif; ?>
                 <?php endwhile; ?>
@@ -166,7 +166,7 @@ if (is_front_page()) :
                         <div class="swiper-slide client <?= $background_color ?> col-3">
                             <p class="text-md font-700">“<?= $testimonial_author ?>”</p>
                             <div class="mt-16 d-flex gap-16 align-center">
-                                <img src="<?= esc_url($photo_autor['url']) ?>" alt="<?= esc_attr($photo_autor['alt']) ?>" class="d-sm-none" />
+                                <img src="<?= esc_url($photo_autor['url']) ?>" alt="<?= esc_attr($photo_autor['alt']) ?>"  width="<?= esc_attr($photo_autor['width']) ?>" height="<?= esc_attr($photo_autor['height']) ?>" class="d-sm-none" />
                                 <p class="col-9 col-sm-12">
                                     <?= $name_author ?>
                                     <span class="font-800 d-block"><?= $position_author ?></span>
@@ -191,7 +191,7 @@ if (is_front_page()) :
                                     <polygon points="20,15 80,50 20,85" />
                                 </svg>
                             </div>
-                            <img src="<?= esc_url($cover_video['url']) ?>" alt="<?= esc_attr($cover_video['alt']) ?>" />
+                            <img src="<?= esc_url($cover_video['url']) ?>" alt="<?= esc_attr($cover_video['alt']) ?>" width="<?= esc_attr($cover_video['width']) ?>" height="<?= esc_attr($cover_video['height']) ?>"/>
                         </div>
                     <?php endif; ?>
                 <?php endwhile; ?>
@@ -209,7 +209,7 @@ if (is_front_page()) :
                     $icon_benefits = get_sub_field('icon_benefits');
                 ?>
                     <div class="benefit-container">
-                        <img src="<?= $icon_benefits['url'] ?>" alt="<?= $icon_benefits['url'] ?>" class="benefit-img" />
+                        <img src="<?= $icon_benefits['url'] ?>" alt="<?= $icon_benefits['url'] ?>" class="benefit-img"/>
                         <h3 class="text-2xl font-800" data-aos="fade-up"><?= $title_benefits ?></h3>
                         <p class="mt-24 text-md" data-aos="fade-up"><?= $description_benefits ?></p>
                     </div>
@@ -240,7 +240,7 @@ if (is_front_page()) :
         </div>
         <div class="d-flex justify-between mt-120 mt-lg-64">
             <?php if ($left_image_about) : ?>
-                <img src="<?= esc_url($left_image_about['url']) ?>" class="position-absolute bottom left d-lg-none" style="width: 30vw; max-width: 550px" alt="<?= esc_attr($left_image_about['alt']) ?>" />
+                <img src="<?= esc_url($left_image_about['url']) ?>" class="position-absolute bottom left d-lg-none" style="width: 30vw; max-width: 550px" alt="<?= esc_attr($left_image_about['alt']) ?>"/>
             <?php endif; ?>
             <div class="col-7 m-auto text-center">
                 <p class="text-4xl font-800 text-capitalize"><?= $text_about ?></p>
@@ -253,7 +253,7 @@ if (is_front_page()) :
                 <?php endif ?>
             </div>
             <?php if ($right_image_about) : ?>
-                <img src="<?= esc_url($right_image_about['url']) ?>" class="position-absolute bottom right d-lg-none" style="width: 34vw; max-width: 639px" alt="<?= esc_attr($right_image_about['alt']) ?>" />
+                <img src="<?= esc_url($right_image_about['url']) ?>" class="position-absolute bottom right d-lg-none" style="width: 34vw; max-width: 639px" alt="<?= esc_attr($right_image_about['alt']) ?>"/>
             <?php endif; ?>
         </div>
     </section>
@@ -358,7 +358,7 @@ if (is_front_page()) :
                                 <div class="round-number black text-md"><?= get_row_index() ?></div>
                                 <h3 class="text-lg font-800"><?= $title ?></h3>
                             </div>
-                            <img src="<?= esc_url($image['url']) ?>" alt="<?= esc_attr($image['alt']) ?>" class="mt-16" style="width: 90%; margin: auto; display: block" />
+                            <img src="<?= esc_url($image['url']) ?>" alt="<?= esc_attr($image['alt']) ?>" width="<?= esc_attr($image['width']) ?>" height="<?= esc_attr($image['height']) ?>" class="mt-16" style="width: 90%; margin: auto; display: block" />
                             <p class="text-md mt-40"><?= $description ?></p>
                         </div>
 
@@ -379,7 +379,7 @@ if (is_front_page()) :
                     <?php endif ?>
                 </div>
                 <?php if ($bottom_image_how_it_works) : ?>
-                    <img src="<?= esc_url($bottom_image_how_it_works['url']) ?>" alt="<?= esc_url($bottom_image_how_it_works['alt']) ?>" class="position-absolute bottom right d-lg-none" />
+                    <img src="<?= esc_url($bottom_image_how_it_works['url']) ?>" alt="<?= esc_url($bottom_image_how_it_works['alt']) ?>" width="<?= esc_attr($bottom_image_how_it_works['width']) ?>" height="<?= esc_attr($bottom_image_how_it_works['height']) ?>" class="position-absolute bottom right d-lg-none" />
                 <?php endif; ?>
             </div>
         </div>

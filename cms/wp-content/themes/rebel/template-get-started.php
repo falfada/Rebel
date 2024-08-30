@@ -41,7 +41,7 @@ $repeater_carousel_client_two = 'repeater_carousel_client_two';
                             </defs>
                             <polygon points="20,15 80,50 20,85" />
                         </svg>
-                        <img src="<?= esc_url($cover_video_schedule['url']) ?>" alt="<?= esc_attr($cover_video_schedule['alt']) ?>" class="col-12">
+                        <img src="<?= esc_url($cover_video_schedule['url']) ?>" alt="<?= esc_attr($cover_video_schedule['alt']) ?>" width="<?= esc_attr($cover_video_schedule['width']) ?>" height="<?= esc_attr($cover_video_schedule['height']) ?>" class="col-12">
                     </div>
                 <?php endif; ?>
             </div>
@@ -73,7 +73,7 @@ $repeater_carousel_client_two = 'repeater_carousel_client_two';
                             <div class="round-number black text-md"><?= get_row_index() ?></div>
                             <h3 class="text-lg font-800"><?= $title ?></h3>
                         </div>
-                        <img src="<?= esc_url($image['url']) ?>" alt="<?= esc_attr($image['alt']) ?>" class="mt-16" style="width: 90%; margin: auto; display: block" />
+                        <img src="<?= esc_url($image['url']) ?>" alt="<?= esc_attr($image['alt']) ?>" width="<?= esc_attr($image['width']) ?>" height="<?= esc_attr($image['height']) ?>" class="mt-16" style="width: 90%; margin: auto; display: block" />
                         <p class="text-md mt-40"><?= $description ?></p>
                     </div>
 
@@ -82,7 +82,7 @@ $repeater_carousel_client_two = 'repeater_carousel_client_two';
         <?php endif; ?>
         <div class="d-flex mt-120">
             <h2 class="text-4xl font-800 text-white col-7 col-md-12"><?= $text_how_it_works ?></h2>
-            <img src="<?= esc_url($bottom_image_how_it_works['url']) ?>" alt="<?= esc_url($bottom_image_how_it_works['alt']) ?>" class="position-absolute bottom right d-md-none col-5">
+            <img src="<?= esc_url($bottom_image_how_it_works['url']) ?>" alt="<?= esc_attr($bottom_image_how_it_works['alt']) ?>" class="position-absolute bottom right d-md-none col-5">
         </div>
     </div>
 </section>
@@ -104,7 +104,7 @@ $repeater_carousel_client_two = 'repeater_carousel_client_two';
                     <div class="swiper-slide client <?= $background_color ?> col-3">
                         <p class="text-md font-700">“<?= $testimonial_author ?>”</p>
                         <div class="mt-16 d-flex justify-between align-center">
-                            <img src="<?= esc_url($photo_autor['url']) ?>" alt="<?= esc_attr($photo_autor['alt']) ?>" width="72" height="72" class="d-sm-none" />
+                            <img src="<?= esc_url($photo_autor['url']) ?>" alt="<?= esc_attr($photo_autor['alt']) ?>" width="<?= esc_attr($photo_autor['width']) ?>" height="<?= esc_attr($photo_autor['height']) ?>" class="d-sm-none" />
                             <p class="col-9 col-sm-12">
                                 <?= $name_author ?>
                                 <span class="font-800 d-block"><?= $position_author ?></span>
@@ -129,7 +129,7 @@ $repeater_carousel_client_two = 'repeater_carousel_client_two';
                                 <polygon points="20,15 80,50 20,85" />
                             </svg>
                         </div>
-                        <img src="<?= esc_url($cover_video['url']) ?>" alt="<?= esc_attr($cover_video['alt']) ?>" />
+                        <img src="<?= esc_url($cover_video['url']) ?>" alt="<?= esc_attr($cover_video['alt']) ?>" width="<?= esc_attr($cover_video['width']) ?>" height="<?= esc_attr($cover_video['height']) ?>"/>
                     </div>
                 <?php endif; ?>
             <?php endwhile; ?>
@@ -154,7 +154,7 @@ $repeater_carousel_client_two = 'repeater_carousel_client_two';
                     <div class="swiper-slide client <?= $background_color ?> col-3">
                         <p class="text-md font-700">“<?= $testimonial_author ?>”</p>
                         <div class="mt-16 d-flex justify-between align-center">
-                            <img src="<?= esc_url($photo_autor['url']) ?>" alt="<?= esc_attr($photo_autor['alt']) ?>" width="72" height="72" class="d-sm-none" />
+                            <img src="<?= esc_url($photo_autor['url']) ?>" alt="<?= esc_attr($photo_autor['alt']) ?>" width="<?= esc_attr($photo_autor['width']) ?>" height="<?= esc_attr($photo_autor['height']) ?>" class="d-sm-none" />
                             <p class="col-9 col-sm-12">
                                 <?= $name_author ?>
                                 <span class="font-800 d-block"><?= $position_author ?></span>
@@ -179,7 +179,7 @@ $repeater_carousel_client_two = 'repeater_carousel_client_two';
                                 <polygon points="20,15 80,50 20,85" />
                             </svg>
                         </div>
-                        <img src="<?= esc_url($cover_video['url']) ?>" alt="<?= esc_attr($cover_video['alt']) ?>" />
+                        <img src="<?= esc_url($cover_video['url']) ?>" alt="<?= esc_attr($cover_video['alt']) ?>" width="<?= esc_attr($cover_video['width']) ?>" height="<?= esc_attr($cover_video['height']) ?>"/>
                     </div>
                 <?php endif; ?>
             <?php endwhile; ?>

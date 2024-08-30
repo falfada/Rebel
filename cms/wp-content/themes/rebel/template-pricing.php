@@ -128,7 +128,7 @@ $group_compare_data_by_column = [];
                 <h2 class="text-5xl"><?= $title_quote ?></h2>
                 <p class="mt-24 text-lg"><?= $description_quote ?></p>
             </div>
-            <img src="<?= esc_url($image_quote['url']) ?>" alt="<?= esc_attr($image_quote['alt']) ?>" class="col-5 position-absolute d-md-none" />
+            <img src="<?= esc_url($image_quote['url']) ?>" alt="<?= esc_attr($image_quote['alt']) ?>" width="<?= esc_attr($image_quote['width']) ?>" height="<?= esc_attr($image_quote['height']) ?>" class="col-5 position-absolute d-md-none" />
         </div>
     </div>
 </section>
@@ -293,7 +293,7 @@ $group_compare_data_by_column = [];
                     <div class="swiper-slide client <?= $background_color ?> col-3">
                         <p class="text-md font-700">“<?= $testimonial_author ?>”</p>
                         <div class="mt-16 d-flex justify-between align-center">
-                            <img src="<?= esc_url($photo_autor['url']) ?>" alt="<?= esc_attr($photo_autor['alt']) ?>" width="72" height="72" class="d-sm-none" />
+                            <img src="<?= esc_url($photo_autor['url']) ?>" alt="<?= esc_attr($photo_autor['alt']) ?>" width="<?= esc_attr($photo_autor['width']) ?>" height="<?= esc_attr($photo_autor['height']) ?>" class="d-sm-none" />
                             <p class="col-9 col-sm-12">
                                 <?= $name_author ?>
                                 <span class="font-800 d-block"><?= $position_author ?></span>
@@ -318,7 +318,7 @@ $group_compare_data_by_column = [];
                                 <polygon points="20,15 80,50 20,85" />
                             </svg>
                         </div>
-                        <img src="<?= esc_url($cover_video['url']) ?>" alt="<?= esc_attr($cover_video['alt']) ?>" />
+                        <img src="<?= esc_url($cover_video['url']) ?>" alt="<?= esc_attr($cover_video['alt']) ?>" width="<?= esc_attr($cover_video['width']) ?>" height="<?= esc_attr($cover_video['height']) ?>"/>
                     </div>
                 <?php endif; ?>
             <?php endwhile; ?>
@@ -343,7 +343,7 @@ $group_compare_data_by_column = [];
                     <div class="swiper-slide client <?= $background_color ?> col-3">
                         <p class="text-md font-700">“<?= $testimonial_author ?>”</p>
                         <div class="mt-16 d-flex justify-between align-center">
-                            <img src="<?= esc_url($photo_autor['url']) ?>" alt="<?= esc_attr($photo_autor['alt']) ?>" width="72" height="72" class="d-sm-none" />
+                            <img src="<?= esc_url($photo_autor['url']) ?>" alt="<?= esc_attr($photo_autor['alt']) ?>" width="<?= esc_attr($photo_autor['width']) ?>" height="<?= esc_attr($photo_autor['height']) ?>" class="d-sm-none" />
                             <p class="col-9 col-sm-12">
                                 <?= $name_author ?>
                                 <span class="font-800 d-block"><?= $position_author ?></span>
@@ -368,7 +368,7 @@ $group_compare_data_by_column = [];
                                 <polygon points="20,15 80,50 20,85" />
                             </svg>
                         </div>
-                        <img src="<?= esc_url($cover_video['url']) ?>" alt="<?= esc_attr($cover_video['alt']) ?>" />
+                        <img src="<?= esc_url($cover_video['url']) ?>" alt="<?= esc_attr($cover_video['alt']) ?>" width="<?= esc_attr($cover_video['width']) ?>" height="<?= esc_attr($cover_video['height']) ?>"/>
                     </div>
                 <?php endif; ?>
             <?php endwhile; ?>
