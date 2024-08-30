@@ -1,5 +1,5 @@
 .pricing {
-  background: $lightgrey url("../img/pricing/pricing-bg.png") center no-repeat;
+  background: $lightgrey url("../img/pricing/pricing-bg.webp") center no-repeat;
   background-size: cover;
   padding: 12rem 0;
   /**
@@ -76,12 +76,12 @@
       text-transform: uppercase;
     }
     &.lightblue {
-      background: url("../img/general/pricing-lightblue-bg.png") center top
+      background: url("../img/general/pricing-lightblue-bg.webp") center top
         no-repeat;
         background-size: cover;
     }
     &.green {
-      background: url("../img/general/pricing-green-bg.png") center top
+      background: url("../img/general/pricing-green-bg.webp") center top
         no-repeat;
         background-size: cover;
     }

@@ -1,20 +1,20 @@
 .hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/home/bg-hero.png") center top no-repeat;
+  background: url("../img/home/bg-hero.webp") center top no-repeat;
   background-size: 100% auto;
   padding-top: 15rem;
 }
 .pricing {
   &-home {
-    background: url("../img/home/bg-pricing.png") center top no-repeat;
+    background: url("../img/home/bg-pricing.webp") center top no-repeat;
     background-size: 100% auto;
     padding: 12rem 0 0 0;
   }
 }
 .gradient-bg {
   width: 100%;
-  background: url("../img/home/bg-gradient.png") center no-repeat;
+  background: url("../img/home/bg-gradient.webp") center no-repeat;
   background-size: cover;
   padding-top: 9.6rem;
   padding-bottom: 17rem;
@@ -77,13 +77,13 @@
   border-radius: 12px;
   padding: 4.8rem 3.2rem;
   &.green{
-    background: url("../img/home/bg-green.png") center no-repeat;
+    background: url("../img/home/bg-green.webp") center no-repeat;
   }
   &.blue{
-    background: url("../img/home/bg-blue.png") center no-repeat;
+    background: url("../img/home/bg-blue.webp") center no-repeat;
   }
   &.lightblue{
-    background: url("../img/home/bg-lightblue.png") center no-repeat;
+    background: url("../img/home/bg-lightblue.webp") center no-repeat;
   }
 }
 .quote-bg{
@@ -153,7 +153,7 @@
   .hero{
     padding-top: 9.6rem;
     height: auto;
-    background: url("../img/home/bg-hero-mobile.png") center top no-repeat;
+    background: url("../img/home/bg-hero-mobile.webp") center top no-repeat;
     background-size: auto 100%;
   }
   .gradient-bg{
