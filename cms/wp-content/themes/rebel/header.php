@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/main.css" />
     <!-- Preloading Logo  -->
     <link rel="preload" href="<?= get_template_directory_uri() ?>/img/general/logo-black.svg" as="image">
+    <link rel="preload" href="<?= get_template_directory_uri() ?>/img/general/logo-color.svg" as="image">
     <!-- Link Lottie -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.3/lottie.min.js"></script>
     <!-- Link jQuery -->
