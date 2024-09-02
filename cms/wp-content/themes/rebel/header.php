@@ -26,6 +26,8 @@
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/main.css" />
+    <!-- Preloading Logo  -->
+    <link rel="preload" href="<?= get_template_directory_uri() ?>/img/general/logo-black.svg" as="image">
     <!-- Link Lottie -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.3/lottie.min.js"></script>
     <!-- Link jQuery -->
@@ -34,10 +36,8 @@
         <?php
         global $page, $paged;
 
-        $title = wp_title('-', false, 'right'); // Get the title without echoing it
-        $site_name = get_bloginfo('name');
-    
-        echo $title . $site_name;
+        wp_title('-', true, 'right');
+        bloginfo('name');
 
         $site_description = get_bloginfo('description', 'display');
 
