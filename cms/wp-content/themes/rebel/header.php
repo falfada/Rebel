@@ -34,7 +34,7 @@
         <?php
         global $page, $paged;
 
-        $title = wp_title('-', false, 'right');
+        $title = wp_title('-', false, 'right'); // Get the title without echoing it
         $site_name = get_bloginfo('name');
     
         echo $title . $site_name;
