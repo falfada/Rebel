@@ -34,8 +34,10 @@
         <?php
         global $page, $paged;
 
-        wp_title('-', true, 'right');
-        bloginfo('name');
+        $title = wp_title('-', false, 'right');
+        $site_name = get_bloginfo('name');
+    
+        echo $title . $site_name;
 
         $site_description = get_bloginfo('description', 'display');
 
