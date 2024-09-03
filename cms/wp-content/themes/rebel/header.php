@@ -35,17 +35,16 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>
         <?php
-        if (function_exists('get_field')) {
+        if (is_front_page() && function_exists('get_field')) {
             $custom_title = get_field('page_title');
             if (!empty($custom_title)) {
                 echo esc_html($custom_title) . ' - ' . get_bloginfo('name');
             } else {
                 wp_title('-', true, 'right');
-                bloginfo('name');
+                // bloginfo('name');
 
                 $site_description = get_bloginfo('description', 'display');
-
-                if ($site_description && (is_home() || is_front_page()))
+                if ($site_description)
                     echo " - $site_description";
             }
         } else {
@@ -53,12 +52,12 @@
             bloginfo('name');
 
             $site_description = get_bloginfo('description', 'display');
-
             if ($site_description && (is_home() || is_front_page()))
                 echo " - $site_description";
         }
         ?>
     </title>
+
 
     <?php wp_head() ?>
 </head>
