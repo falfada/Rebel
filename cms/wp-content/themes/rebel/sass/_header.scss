@@ -9,7 +9,7 @@ header {
     .logo{
         background: url("../img/general/logo-color.svg") center no-repeat;
         background-size: cover;
-        min-height: 48px;
+        min-height: 70px;
     }
     .nav-link{
         color: white;
@@ -20,12 +20,12 @@ header {
   }
   .logo {
     width: 146px;
-    height: 48px;
+    height: 70px;
     background: url("../img/general/logo-black.svg") center no-repeat;
     background-size: cover;
     transition: background-color 0.3s ease;
     text-indent: -9999px;
-    min-height: 48px;
+    min-height: 70px;
   }
   .nav-link{
     color: $darkgrey;

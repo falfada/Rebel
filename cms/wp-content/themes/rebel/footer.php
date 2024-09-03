@@ -3,7 +3,7 @@
         <div class="d-flex justify-between">
             <div class="col-5 col-sm-12">
                 <a href="<?= home_url() ?>" class="footer-logo">Rebel</a>
-                <a href="<?= home_url('/get-started/') ?>" class="button black mt-40 mt-sm-16">Book a Call</a>
+                <a href="<?= home_url('/get-started/') ?>" class="button black mt-sm-16">Book a Call</a>
                 <div class="col-4 col-sm-12 d-flex align-center justify-center mt-24 gap-24">
                     <a href="https://www.facebook.com/getrebeledits" target="_blank" class="ssmm-icon">
                         <span class="sr-only">Facebook</span>

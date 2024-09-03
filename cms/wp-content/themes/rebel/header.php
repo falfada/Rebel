@@ -49,7 +49,7 @@
             }
         } else {
             wp_title('-', true, 'right');
-            bloginfo('name');
+            // bloginfo('name');
 
             $site_description = get_bloginfo('description', 'display');
             if ($site_description && (is_home() || is_front_page()))
@@ -66,7 +66,7 @@
     <?php if (is_front_page()) : ?>
         <!-- Lottie Animation -->
         <div id="pageLoader">
-            <iframe src="https://lottie.host/?file=34f5a960-0f0e-4278-ba21-fe18b8a2e279/r3fxIrQuaX.json"></iframe>
+            <iframe src="https://lottie.host/embed/6793f401-4ae3-4f5d-82df-c69a590d9473/yvf07xhL2v.json"></iframe>
         </div>
 
         <div id="pageContent" style="display: none">
