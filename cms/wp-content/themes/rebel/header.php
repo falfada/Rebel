@@ -41,7 +41,7 @@
                 echo esc_html($custom_title) . ' - ' . get_bloginfo('name');
             } else {
                 wp_title('-', true, 'right');
-                bloginfo('name');
+                // bloginfo('name');
 
                 $site_description = get_bloginfo('description', 'display');
                 if ($site_description)
