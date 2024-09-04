@@ -38,7 +38,7 @@
         if (is_front_page() && function_exists('get_field')) {
             $custom_title = get_field('page_title');
             if (!empty($custom_title)) {
-                echo esc_html($custom_title) . ' - ' . get_bloginfo('name');
+                echo esc_html($custom_title);
             } else {
                 wp_title('-', true, 'right');
                 // bloginfo('name');
@@ -66,7 +66,7 @@
     <?php if (is_front_page()) : ?>
         <!-- Lottie Animation -->
         <div id="pageLoader">
-            <iframe src="https://lottie.host/embed/6793f401-4ae3-4f5d-82df-c69a590d9473/yvf07xhL2v.json"></iframe>
+            <iframe src="https://lottie.host/embed/ab6dc4de-f5f6-4392-af82-1c1131b800f3/o509qxJtIk.json"></iframe>
         </div>
 
         <div id="pageContent" style="display: none">
