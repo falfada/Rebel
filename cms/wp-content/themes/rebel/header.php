@@ -4,6 +4,11 @@
 <head>
     <meta charset="<?php bloginfo('charset') ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:url" content="<?= get_template_directory_uri() ?>/img/general/og-image.svg"/>
+    <meta property="og:image" content="<?= get_template_directory_uri() ?>/img/general/og-image.svg"/>
+    <meta property="og:image:alt" content="Thunder black logo"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
