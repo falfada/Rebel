@@ -139,6 +139,10 @@
     }
   }
 }
+.logo-table{
+  margin-top: -2rem;
+  margin-right: 2rem;
+}
 @media (max-width: $screen_2xl) {
   .pricing{
     &-options{
@@ -146,6 +150,9 @@
       align-items: center;
     }
   }  
+  .logo-table{
+    margin-right: 0;
+  }
 }
 
 @media (max-width: $screen_lg) {
@@ -163,6 +170,7 @@
       }
     }
   }
+  
 }
 @media (max-width: $screen_md) {
   .pricing{

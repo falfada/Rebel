@@ -12,9 +12,9 @@
     <link rel="icon" sizes="192x192" href="<?= get_template_directory_uri() ?>/img/general/android-chrome-192x192.png" />
     <link rel="icon" sizes="512x512" href="<?= get_template_directory_uri() ?>/img/general/android-chrome-512x512.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="<?= get_template_directory_uri() ?>/img/general/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="<?= get_template_directory_uri() ?>/img/general/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= get_template_directory_uri() ?>/img/general/favicon-16x16.png" />
-    <link rel="icon" type="image/x-icon" href="<?= get_template_directory_uri() ?>/img/general/favicon-16x16.png" />
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="<?= get_template_directory_uri() ?>/img/general/favicon-32x32.svg" />
+    <link rel="icon" type="image/svg+xml" sizes="16x16" href="<?= get_template_directory_uri() ?>/img/general/favicon-16x16.svg" />
+    <link rel="icon" type="image/svg+xml" href="<?= get_template_directory_uri() ?>/img/general/favicon-16x16.svg" />
 
     <!-- Link Adobe Fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/lca3ugm.css" />
