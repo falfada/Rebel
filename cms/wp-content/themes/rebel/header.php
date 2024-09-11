@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet" />
     <!-- Favicon -->
-    <link rel="icon" sizes="192x192" href="<?= get_template_directory_uri() ?>/img/general/android-chrome-192x192.png" />
-    <link rel="icon" sizes="512x512" href="<?= get_template_directory_uri() ?>/img/general/android-chrome-512x512.png" />
+    <link rel="icon" sizes="192x192" href="<?= get_template_directory_uri() ?>/img/general/android-chrome-192x192.svg" />
+    <link rel="icon" sizes="512x512" href="<?= get_template_directory_uri() ?>/img/general/android-chrome-512x512.svg" />
     <link rel="apple-touch-icon" sizes="180x180" href="<?= get_template_directory_uri() ?>/img/general/apple-touch-icon.png" />
     <link rel="icon" type="image/svg+xml" sizes="32x32" href="<?= get_template_directory_uri() ?>/img/general/favicon-32x32.svg" />
     <link rel="icon" type="image/svg+xml" sizes="16x16" href="<?= get_template_directory_uri() ?>/img/general/favicon-16x16.svg" />
