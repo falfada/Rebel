@@ -167,7 +167,7 @@ $group_compare_data_by_column = [];
                     <div class="rebel-bg"></div>
                     <div class="d-grid grid-col-6 text-white">
                         <div></div>
-                        <img src="<?= get_template_directory_uri() ?>/img/general/logo-black.svg" alt="" class="m-auto" />
+                        <img src="<?= get_template_directory_uri() ?>/img/general/logo-black.svg" alt="Logo in black color" width="180" height="70" class="m-auto logo-table"/>
                         <h3 class="text-xl">Freelancer</h3>
                         <h3 class="text-xl">Employee</h3>
                         <h3 class="text-xl">Agency</h3>
