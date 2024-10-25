@@ -9,6 +9,8 @@ header {
     .logo{
         background: url("../img/general/logo-color.svg") center no-repeat;
         background-size: cover;
+        height: 40px;
+        min-height: 40px;
     }
     .nav-link{
         color: white;
