@@ -66,7 +66,7 @@
     <?php if (is_front_page()) : ?>
         <!-- Lottie Animation -->
         <div id="pageLoader">
-            <iframe src="https://lottie.host/embed/ab6dc4de-f5f6-4392-af82-1c1131b800f3/o509qxJtIk.json"></iframe>
+            <iframe src="https://lottie.host/embed/8bb59238-279f-426b-9198-055fc0624449/cusbjwGfIo.json"></iframe>
         </div>
 
         <div id="pageContent" style="display: none">
