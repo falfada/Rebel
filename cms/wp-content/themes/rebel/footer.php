@@ -34,6 +34,9 @@
                     <a href="<?= home_url('/pricing/') ?>" class="text-sm text-black">Pricing</a>
                 </div>
                 <div class="col-12 mt-40 mt-sm-16">
+                    <a href="<?= home_url('/portfolio/') ?>" class="text-sm text-black">Portfolio</a>
+                </div>
+                <div class="col-12 mt-40 mt-sm-16">
                     <a href="<?= home_url('/get-started/') ?>" class="text-sm text-black">Get Started</a>
                 </div>
             </div>
