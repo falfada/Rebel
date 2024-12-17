@@ -13,6 +13,24 @@
     }
 }
  /**
+ * New slider.
+ */
+ .splide__slide {
+    /* width: 400px; */
+    opacity: .5;
+  }
+  .splide__slide img{
+    width: 100%;
+    /* margin: auto; */
+  }
+  .splide__slide.is-active {
+    opacity: 1; /* Fully visible for the active slide */
+  }
+  .splide__slide:hover {
+    opacity: 0.8; /* Slight change on hover */
+  }
+
+ /**
  * Testimonials.
  */
  .testimonials{

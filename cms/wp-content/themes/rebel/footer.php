@@ -66,15 +66,17 @@
         </video>
     </div>
 </div>
-</div>
-<script></script>
+
+
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <!-- Aos JS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- Splide -->
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-<script src="<?= get_template_directory_uri() ?>/js/functions.min.js"></script>
+<script src="<?= get_template_directory_uri() ?>/js/dist/functions.dev.js"></script>
 </body>
 
 </html>
