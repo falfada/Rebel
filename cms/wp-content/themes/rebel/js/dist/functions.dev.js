@@ -159,7 +159,7 @@ $(document).ready(function () {
     $(".mobile-menu").slideToggle();
   });
   /**
-   * New Slider.
+   * Clients Slider 1.
    */
 
   var splide = new Splide(".splide", {
@@ -172,9 +172,19 @@ $(document).ready(function () {
     video: {
       loop: true
     }
-  }); // Mount Splide and Video Extension
-
+  });
   splide.mount(window.splide.Extensions);
+  document.addEventListener("click", function (event) {
+    if (event.target.tagName === "VIDEO") {
+      var video = event.target;
+
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    }
+  });
   /**
    * Clients Slider 2.
    */

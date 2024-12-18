@@ -164,9 +164,8 @@ $(document).ready(function () {
   
 
   /**
-   * New Slider.
+   * Clients Slider 1.
    */
-  
   let splide = new Splide(".splide", {
     type: "loop",
     padding: "20rem",
@@ -179,9 +178,18 @@ $(document).ready(function () {
     },
   });
   
-  // Mount Splide and Video Extension
   splide.mount(window.splide.Extensions);
   
+  document.addEventListener("click", (event) => {
+    if (event.target.tagName === "VIDEO") {
+      let video = event.target;
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    }
+  });
   /**
    * Clients Slider 2.
    */

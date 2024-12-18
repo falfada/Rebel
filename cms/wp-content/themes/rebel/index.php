@@ -105,29 +105,30 @@ if (is_front_page()) :
     <?php endif; ?>
 
 
+    <!-- Clients Slider 1 -->
+    <?php if (have_rows($repeater_carousel_client_one)) : ?>
+        <section id="splide" class="splide">
+            <div class="splide__track">
+                <div class="splide__list">
+                    <?php while (have_rows($repeater_carousel_client_one)) : the_row(); ?>
+                        <?php
+                        $orientation_video = get_sub_field('orientation_video');
+                        $cover_video = get_sub_field('cover_video');
+                        $file_video = get_sub_field('file_video');
 
-    
+                        if ($orientation_video && $cover_video && $file_video) :
+                        ?>
+                            <div class="splide__slide video <?= esc_attr($orientation_video) ?>" data-splide-html-video="<?= esc_url($file_video['url']) ?>">
+                                <img src="<?= esc_url($cover_video['url']) ?>" alt="<?= esc_attr($cover_video['alt']) ?>" width="<?= esc_attr($cover_video['width']) ?>" height="<?= esc_attr($cover_video['height']) ?>">
+                            </div>
 
-  <!-- New Slider -->
 
-<section id="splide" class="splide">
-    <div class="splide__track">
-        <div class="splide__list">
-            <div class="splide__slide" data-splide-html-video="http://rebel.test/cms/wp-content/uploads/2023/09/portfolio5.mp4">
-                <img src="https://fakeimg.pl/600x400" alt="">
+                        <?php endif; ?>
+                    <?php endwhile; ?>
+                </div>
             </div>
-
-            <div class="splide__slide" data-splide-youtube="https://www.youtube.com/watch?v=gset79KMmt0">
-                <img src="https://fakeimg.pl/600x400" alt="">
-            </div>
-
-            <div class="splide__slide" data-splide-youtube="https://www.youtube.com/watch?v=gset79KMmt0">
-                <img src="https://fakeimg.pl/600x400" alt="">
-            </div>
-        </div>
-    </div>
-</section> 
-
+        </section>
+    <?php endif; ?>
 
 
 
