@@ -74,6 +74,7 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!-- Splide -->
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/js/splide-extension-video.min.js"></script>
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="<?= get_template_directory_uri() ?>/js/dist/functions.dev.js"></script>

@@ -166,6 +166,7 @@ $(document).ready(function () {
   /**
    * New Slider.
    */
+  
   let splide = new Splide(".splide", {
     type: "loop",
     padding: "20rem",
@@ -173,9 +174,14 @@ $(document).ready(function () {
     perPage: 1,
     gap: "10rem",
     pagination: false,
+    video: {
+      loop: true,
+    },
   });
-
-  splide.mount();
+  
+  // Mount Splide and Video Extension
+  splide.mount(window.splide.Extensions);
+  
   /**
    * Clients Slider 2.
    */

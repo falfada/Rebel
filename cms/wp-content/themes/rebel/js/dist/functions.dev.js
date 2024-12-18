@@ -168,9 +168,13 @@ $(document).ready(function () {
     focus: "center",
     perPage: 1,
     gap: "10rem",
-    pagination: false
-  });
-  splide.mount();
+    pagination: false,
+    video: {
+      loop: true
+    }
+  }); // Mount Splide and Video Extension
+
+  splide.mount(window.splide.Extensions);
   /**
    * Clients Slider 2.
    */
