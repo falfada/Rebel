@@ -14,15 +14,14 @@ get_header();
             <?php
             if (have_rows('single_portfolio')) :
                 while (have_rows('single_portfolio')) : the_row();
+                    $image = get_sub_field('thumbnail');
+                    $title = get_sub_field('title');
+                    $video_url = get_sub_field('video_file');
             ?>
 
-                    <div class="portfolio-item">
+                    <div class="portfolio-item showVideo" data-video-url="<?php echo esc_url($video_url['url']); ?>">
                         <div class="mask"></div>
                         <?php
-                        $image = get_sub_field('thumbnail');
-                        $title = get_sub_field('title');
-                        $video_url = get_sub_field('video_file');
-
                         if (is_array($image)) {
                             echo '<img src="' . esc_url($image['url']) . '" alt="' . esc_attr($image['alt']) . '">';
                         }
@@ -32,10 +31,6 @@ get_header();
                             echo '<span>VIEW ' . esc_html($title) . ' &mdash; VIEW ' . esc_html($title) . ' &mdash; VIEW ' . esc_html($title) . ' &mdash; VIEW ' . esc_html($title) . ' &mdash; VIEW ' . esc_html($title) . '</span>';
                         }
                         ?>
-
-                        <a href="#" class="open-modal" data-video-url="<?php echo esc_url($video_url['url']); ?>">
-                            <!-- Add the modal trigger here -->
-                        </a>
                     </div>
 
                 <?php endwhile; ?>

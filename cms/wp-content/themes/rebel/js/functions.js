@@ -192,30 +192,34 @@ $(document).ready(function () {
   /**
    * Clients Slider 1.
    */
-  let splide = new Splide(".splide", {
-    type: "loop",
-    padding: "20rem",
-    focus: "center",
-    perPage: 1,
-    gap: "10rem",
-    pagination: false,
-    video: {
-      loop: true,
-    },
-  });
+  const splideContainer = document.querySelector(".splide");
+  if (splideContainer) {
+    let splide = new Splide(".splide", {
+      type: "loop",
+      padding: "20rem",
+      focus: "center",
+      perPage: 1,
+      gap: "10rem",
+      pagination: false,
+      video: {
+        loop: true,
+      },
+    });
 
-  splide.mount(window.splide.Extensions);
+    splide.mount(window.splide.Extensions);
 
-  document.addEventListener("click", (event) => {
-    if (event.target.tagName === "VIDEO") {
-      let video = event.target;
-      if (video.paused) {
-        video.play();
-      } else {
-        video.pause();
+    document.addEventListener("click", (event) => {
+      if (event.target.tagName === "VIDEO") {
+        let video = event.target;
+        if (video.paused) {
+          video.play();
+        } else {
+          video.pause();
+        }
       }
-    }
-  });
+    });
+  }
+
   /**
    * Clients Slider 2.
    */

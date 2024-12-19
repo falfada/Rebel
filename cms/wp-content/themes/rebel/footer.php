@@ -57,6 +57,7 @@
 <?php endif; ?>
 </footer>
 
+
 <!-- The modal -->
 <div id="videoModal" class="modal">
     <div class="modal-content">

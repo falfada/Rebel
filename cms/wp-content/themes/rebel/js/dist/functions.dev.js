@@ -188,32 +188,37 @@ $(document).ready(function () {
    * Clients Slider 1.
    */
 
-  var splide = new Splide(".splide", {
-    type: "loop",
-    padding: "20rem",
-    focus: "center",
-    perPage: 1,
-    gap: "10rem",
-    pagination: false,
-    video: {
-      loop: true
-    }
-  });
-  splide.mount(window.splide.Extensions);
-  document.addEventListener("click", function (event) {
-    if (event.target.tagName === "VIDEO") {
-      var video = event.target;
+  var splideContainer = document.querySelector(".splide");
 
-      if (video.paused) {
-        video.play();
-      } else {
-        video.pause();
+  if (splideContainer) {
+    var splide = new Splide(".splide", {
+      type: "loop",
+      padding: "20rem",
+      focus: "center",
+      perPage: 1,
+      gap: "10rem",
+      pagination: false,
+      video: {
+        loop: true
       }
-    }
-  });
+    });
+    splide.mount(window.splide.Extensions);
+    document.addEventListener("click", function (event) {
+      if (event.target.tagName === "VIDEO") {
+        var video = event.target;
+
+        if (video.paused) {
+          video.play();
+        } else {
+          video.pause();
+        }
+      }
+    });
+  }
   /**
    * Clients Slider 2.
    */
+
 
   var swiperClients2 = {
     loop: true,
