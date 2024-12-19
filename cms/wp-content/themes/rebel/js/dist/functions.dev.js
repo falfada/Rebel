@@ -2,8 +2,34 @@
 
 $(document).ready(function () {
   /**
+   * Portfolio Animation.
+   */
+  gsap.registerPlugin(ScrollTrigger);
+  document.querySelectorAll(".portfolio-item").forEach(function (item) {
+    var mask = item.querySelector(".mask");
+    gsap.to(mask, {
+      y: "-100%",
+      duration: 1.5,
+      ease: "power4.out",
+      stagger: 0.2,
+      scrollTrigger: {
+        trigger: item,
+        start: "top 90%",
+        toggleActions: "play none none none"
+      }
+    });
+  });
+  gsap.to(".content", {
+    duration: 1.5,
+    y: 0,
+    opacity: 1,
+    ease: "power3.out",
+    stagger: 0.3
+  });
+  /**
    * Form Input.
    */
+
   $("#fileInput").change(function () {
     var parentContainer = $(this).parent();
     var labelForFile = parentContainer.siblings("label");

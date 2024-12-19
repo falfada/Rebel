@@ -15,7 +15,6 @@
     <link rel="icon" type="image/svg+xml" sizes="32x32" href="<?= get_template_directory_uri() ?>/img/general/favicon-32x32.svg" />
     <link rel="icon" type="image/svg+xml" sizes="16x16" href="<?= get_template_directory_uri() ?>/img/general/favicon-16x16.svg" />
     <link rel="icon" type="image/svg+xml" href="<?= get_template_directory_uri() ?>/img/general/favicon-16x16.svg" />
-
     <!-- Link Adobe Fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/lca3ugm.css" />
     <!-- Link Google Icons -->
@@ -27,7 +26,7 @@
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/css/splide-extension-video.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/css/splide-extension-video.min.css">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/main.css" />
@@ -62,7 +61,9 @@
         }
         ?>
     </title>
-
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
 
     <?php wp_head() ?>
 </head>

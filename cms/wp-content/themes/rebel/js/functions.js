@@ -1,5 +1,32 @@
 $(document).ready(function () {
   /**
+   * Portfolio Animation.
+   */
+  gsap.registerPlugin(ScrollTrigger);
+
+  document.querySelectorAll(".portfolio-item").forEach((item) => {
+    const mask = item.querySelector(".mask");
+    gsap.to(mask, {
+      y: "-100%",
+      duration: 1.5,
+      ease: "power4.out",
+      stagger: 0.2,
+      scrollTrigger: {
+        trigger: item,
+        start: "top 90%",
+        toggleActions: "play none none none",
+      },
+    });
+  });
+
+  gsap.to(".content", {
+    duration: 1.5,
+    y: 0,
+    opacity: 1,
+    ease: "power3.out",
+    stagger: 0.3,
+  });
+  /**
    * Form Input.
    */
   $("#fileInput").change(function () {
@@ -161,7 +188,6 @@ $(document).ready(function () {
     $(this).toggleClass("rotate");
     $(".mobile-menu").slideToggle();
   });
-  
 
   /**
    * Clients Slider 1.
@@ -177,9 +203,9 @@ $(document).ready(function () {
       loop: true,
     },
   });
-  
+
   splide.mount(window.splide.Extensions);
-  
+
   document.addEventListener("click", (event) => {
     if (event.target.tagName === "VIDEO") {
       let video = event.target;

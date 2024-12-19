@@ -1974,4 +1974,99 @@ select {
   .booked .color-green {
     color: #0FF7A4; }
 
+.mask {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0FF7A4;
+  z-index: 2; }
+
+.content {
+  opacity: 0;
+  transform: translateY(50px); }
+
+.portfolio {
+  background: url("../img/home/bg-pricing.webp") top center no-repeat;
+  background-size: contain;
+  padding-top: 12rem; }
+  .portfolio-grid {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem; }
+  .portfolio-item {
+    height: 222px;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .portfolio-item::before {
+      content: "";
+      width: 100%;
+      height: 50%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 100%); }
+    .portfolio-item::after {
+      content: "";
+      width: 0%;
+      height: 100%;
+      background: linear-gradient(90deg, #0ff7a4 0%, #00f0fc 100%);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 0.3s ease;
+      z-index: 2; }
+    .portfolio-item img {
+      max-width: 200%;
+      display: block;
+      object-fit: cover; }
+    .portfolio-item h3 {
+      color: white;
+      position: absolute;
+      left: 1.5rem;
+      bottom: 1.5rem; }
+    .portfolio-item span {
+      position: absolute;
+      top: 50%;
+      left: -20%;
+      transform: translate(0, -50%);
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      white-space: nowrap;
+      transition: 0.1s ease-out;
+      animation: float-text 40s linear infinite;
+      animation-delay: 0.3s;
+      z-index: 5;
+      opacity: 0;
+      padding: 20px 0; }
+    .portfolio-item:hover::after {
+      width: 110%; }
+    .portfolio-item:hover span {
+      opacity: 1; }
+
+@keyframes float-text {
+  0% {
+    left: -20%; }
+  50% {
+    left: -100%; }
+  100% {
+    left: -20%; } }
+@media (max-width: 640px) {
+  .portfolio {
+    padding-top: 8rem; }
+    .portfolio-grid {
+      grid-template-columns: repeat(2, 1fr); }
+    .portfolio-item {
+      height: 150px; } }
+
 /*# sourceMappingURL=main.css.map */

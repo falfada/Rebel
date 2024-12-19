@@ -104,7 +104,6 @@ if (is_front_page()) :
         </section>
     <?php endif; ?>
 
-
     <!-- Clients Slider 1 -->
     <?php if (have_rows($repeater_carousel_client_one)) : ?>
         <section id="splide" class="splide">
@@ -129,8 +128,6 @@ if (is_front_page()) :
             </div>
         </section>
     <?php endif; ?>
-
-
 
     <!-- Clients Slider 2 -->
     <?php if (have_rows($repeater_carousel_client_two)) : ?>

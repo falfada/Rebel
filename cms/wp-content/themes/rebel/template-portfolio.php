@@ -4,12 +4,12 @@ Template Name: Portfolio page
 */
 get_header();
 ?>
-<section class="pricing">
-    <div class="container">
+<section class="portfolio">
+    <div class="container text-center">
         <p class="mark green text-sm font-800 animate">
             <span>OUR WORK</span>
         </p>
-        <h1 class="text-5xl">Portfolio</h1>
+        <h1 class="text-5xl content">Portfolio</h1>
         <div class="portfolio-grid">
             <?php
             if (have_rows('single_portfolio')) :
@@ -17,6 +17,7 @@ get_header();
             ?>
 
                     <div class="portfolio-item">
+                        <div class="mask"></div>
                         <?php
                         $image = get_sub_field('thumbnail');
                         $title = get_sub_field('title');
@@ -28,6 +29,7 @@ get_header();
 
                         if ($title) {
                             echo '<h3>' . esc_html($title) . '</h3>';
+                            echo '<span>VIEW ' . esc_html($title) . ' &mdash; VIEW ' . esc_html($title) . ' &mdash; VIEW ' . esc_html($title) . ' &mdash; VIEW ' . esc_html($title) . ' &mdash; VIEW ' . esc_html($title) . '</span>';
                         }
                         ?>
 
@@ -42,7 +44,5 @@ get_header();
         </div>
     </div>
 </section>
-
-
 
 <?php get_footer(); ?>
