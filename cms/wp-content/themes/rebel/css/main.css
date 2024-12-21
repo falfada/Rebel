@@ -1161,8 +1161,8 @@ header {
     100% {
       width: calc(100% + 1.6rem); } } }
 /**
-* Clients slider.
-*/
+ * Clients slider.
+ */
 .clients-logos {
   width: 100%;
   overflow: hidden; }
@@ -1173,27 +1173,44 @@ header {
     text-align: center; }
 
 /**
-* New slider.
-*/
-.splide__slide {
-  /* width: 400px; */
-  opacity: .5; }
-
-.splide__slide img {
-  width: 100%;
-  /* margin: auto; */ }
-
-.splide__slide.is-active {
-  opacity: 1;
-  /* Fully visible for the active slide */ }
-
-.splide__slide:hover {
-  opacity: 0.8;
-  /* Slight change on hover */ }
+ * New slider.
+ */
+.splide {
+  margin: 10rem 0; }
+  .splide__track--nav > .splide__list > .splide__slide {
+    border: none; }
+    .splide__track--nav > .splide__list > .splide__slide.is-active {
+      border: none; }
+  .splide__slide {
+    opacity: 0.2;
+    transition: all 0.4s ease;
+    transform: scale(0.75);
+    border-radius: 8px;
+    overflow: hidden; }
+    .splide__slide img {
+      width: 100%; }
+    .splide__slide.is-active {
+      opacity: 1;
+      transform: scale(1); }
+    .splide__slide:hover {
+      opacity: 1; }
+    .splide__slide--has-video:hover .splide__video__play {
+      background: linear-gradient(90deg, #0ff7a4 0%, #00f0fc 100%); }
+      .splide__slide--has-video:hover .splide__video__play:after {
+        border-color: transparent transparent transparent #262626; }
+  .splide__video__play {
+    background: #262626;
+    width: 60px;
+    height: 60px;
+    opacity: 1;
+    transition: all 0.3s ease; }
+    .splide__video__play:after {
+      border-color: transparent transparent transparent #fff;
+      transition: all 0.3s ease; }
 
 /**
-* Testimonials.
-*/
+ * Testimonials.
+ */
 .testimonials {
   width: 100%;
   overflow: hidden; }
@@ -1233,7 +1250,7 @@ header {
       height: 100%;
       object-fit: cover; }
     .testimonials .video::after {
-      content: '';
+      content: "";
       position: absolute;
       background: #262626;
       border-radius: 0 0 8px 8px;

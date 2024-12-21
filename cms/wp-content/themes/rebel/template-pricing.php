@@ -276,12 +276,13 @@ $group_compare_data_by_column = [];
     </div>
 </section>
 
+
 <!-- Clients Slider 1 -->
-<?php if (have_rows($repeater_carousel_client_one)) : ?>
+<?php if (have_rows($repeater_carousel_client_one, 2)) : ?>
         <section id="splide" class="splide">
             <div class="splide__track">
                 <div class="splide__list">
-                    <?php while (have_rows($repeater_carousel_client_one)) : the_row(); ?>
+                    <?php while (have_rows($repeater_carousel_client_one, 2)) : the_row(); ?>
                         <?php
                         $orientation_video = get_sub_field('orientation_video');
                         $cover_video = get_sub_field('cover_video');

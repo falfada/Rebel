@@ -196,11 +196,13 @@ $(document).ready(function () {
   if (splideContainer) {
     let splide = new Splide(".splide", {
       type: "loop",
-      padding: "20rem",
+      gap: "0rem",
       focus: "center",
-      perPage: 1,
-      gap: "10rem",
+      arrows: true,
+      isNavigation: true,
       pagination: false,
+      updateOnMove: true,
+      autoWidth: true,
       video: {
         loop: true,
       },
