@@ -89,7 +89,7 @@
                 </div>
                 <ul class="d-flex gap-64 align-center d-md-none">
                     <li><a href="<?= home_url('/pricing/') ?>" class="text-sm nav-link">Pricing</a></li>
-                    <li><a href="<?= home_url('/portfolio/') ?>" class="text-sm nav-link">Portfolio</a></li>
+                    <!-- <li><a href="<?= home_url('/portfolio/') ?>" class="text-sm nav-link">Portfolio</a></li> -->
                     <li>
                         <a href="<?= home_url('/get-started/') ?>" class="button gradient">Book a call</a>
                     </li>
@@ -97,7 +97,7 @@
             </nav>
             <ul class="mobile-menu">
                 <li><a href="<?= home_url('/pricing/') ?>" class="text-md nav-link">Pricing</a></li>
-                <li><a href="<?= home_url('/portfolio/') ?>" class="text-md nav-link">Portfolio</a></li>
+                <!-- <li><a href="<?= home_url('/portfolio/') ?>" class="text-md nav-link">Portfolio</a></li> -->
                 <li>
                     <a href="<?= home_url('/get-started/') ?>" class="button gradient">Book a call</a>
                 </li>
