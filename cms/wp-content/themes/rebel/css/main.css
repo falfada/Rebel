@@ -1985,7 +1985,7 @@ select {
 
 .portfolio {
   background: url("../img/home/bg-pricing.webp") top center no-repeat;
-  background-size: contain;
+  background-size: 100% auto;
   padding-top: 12rem; }
   .portfolio-grid {
     width: 80%;
