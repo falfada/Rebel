@@ -60,8 +60,8 @@
 
 <!-- The modal -->
 <div id="videoModal" class="modal">
+    <span class="close" id="closeModal">&times;</span>
     <div class="modal-content">
-        <span class="close" id="closeModal">&times;</span>
         <video id="videoPlayer" controls>
             <source src="" type="video/mp4" />
         </video>

@@ -192,69 +192,58 @@ $(document).ready(function () {
   /**
    * Clients Slider 1.
    */
-  const splideContainer = document.querySelector(".splide");
-  if (splideContainer) {
-    let splide = new Splide(".splide", {
-      type: "loop",
-      gap: "0rem",
-      focus: "center",
-      arrows: true,
-      isNavigation: true,
-      pagination: false,
-      updateOnMove: true,
-      autoWidth: true,
-      video: {
-        loop: true,
-      },
-    });
+  const splideContainers = document.querySelectorAll(".splide");
 
-    splide.mount(window.splide.Extensions);
+  splideContainers.forEach((container) => {
+    if (container.classList.contains("videos")) {
+      new Splide(container, {
+        type: "loop",
+        gap: "0rem",
+        focus: "center",
+        arrows: true,
+        pagination: false,
+        updateOnMove: true,
+        autoWidth: true,
+        start: 1,
+        video: {
+          loop: true,
+        },
+      }).mount(window.splide.Extensions);
 
-    document.addEventListener("click", (event) => {
-      if (event.target.tagName === "VIDEO") {
-        let video = event.target;
-        if (video.paused) {
-          video.play();
-        } else {
-          video.pause();
+      document.addEventListener("click", (event) => {
+        if (event.target.tagName === "VIDEO") {
+          let video = event.target;
+          if (video.paused) {
+            video.play();
+          } else {
+            video.pause();
+          }
         }
-      }
-    });
-  }
-
-  /**
-   * Clients Slider 2.
-   */
-  let swiperClients2 = {
-    loop: true,
-    autoplay: {
-      delay: 1,
-      disableOnInteraction: false,
-    },
-    slidesPerView: "auto",
-    speed: 10000,
-    grabCursor: true,
-    spaceBetween: 16,
-    //mousewheelControl: true,
-    //keyboardControl: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  };
-
-  let swiper2 = new Swiper(
-    ".testimonials.two.swiper-container",
-    swiperClients2
-  );
-  $(".testimonials.two.swiper-container").hover(
-    function () {
-      swiper.autoplay.stop();
-    },
-    function () {
-      swiper.autoplay.start();
+      });
+      /**
+       * Clients Slider 2.
+       */
+    } else if (container.classList.contains("testimonials")) {
+      new Splide(container, {
+        type: "loop",
+        autoWidth: true,
+        autoplay: true,
+        interval: 0,
+        drag: false,
+        speed: 200000,
+        arrows: false,
+        pagination: false,
+        gap: "2rem",
+        breakpoints: {
+          768: {
+            perPage: 1,
+          },
+        },
+      }).mount();
     }
-  );
+  });
+
+  
   /**
    * Scroll Animation.
    */
