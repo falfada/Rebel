@@ -278,100 +278,53 @@ $group_compare_data_by_column = [];
 
 <!-- Clients Slider 1 -->
 <?php if (have_rows($repeater_carousel_client_one, 2)) : ?>
-    <section class="testimonials one swiper-container swiper-container-free-mode mt-64">
-        <div class="swiper-wrapper">
-            <?php while (have_rows($repeater_carousel_client_one, 2)) : the_row();
-                $slide_type = get_sub_field('slide_type');
-            ?>
-                <?php if ($slide_type === 'text') :
-                    $background_color = get_sub_field('background_color');
-                    $testimonial_author = get_sub_field('testimonial_author');
-                    $photo_autor = get_sub_field('photo_autor');
-                    $name_author = get_sub_field('name_author');
-                    $position_author = get_sub_field('position_author');
-                ?>
-                    <div class="swiper-slide client <?= $background_color ?> col-3">
-                        <p class="text-md font-700">“<?= $testimonial_author ?>”</p>
-                        <div class="mt-16 d-flex justify-between align-center">
-                            <img src="<?= esc_url($photo_autor['url']) ?>" alt="<?= esc_attr($photo_autor['alt']) ?>" width="<?= esc_attr($photo_autor['width']) ?>" height="<?= esc_attr($photo_autor['height']) ?>" class="d-sm-none" />
-                            <p class="col-9 col-sm-12">
-                                <?= $name_author ?>
-                                <span class="font-800 d-block"><?= $position_author ?></span>
-                            </p>
-                        </div>
-                    </div>
-                <?php elseif ($slide_type === 'video') :
-                    $orientation_video = get_sub_field('orientation_video');
-                    $cover_video = get_sub_field('cover_video');
-                    $file_video = get_sub_field('file_video');
+        <section id="splide" class="splide videos">
+            <div class="splide__track">
+                <div class="splide__list">
+                    <?php while (have_rows($repeater_carousel_client_one, 2)) : the_row(); ?>
+                        <?php
+                        $orientation_video = get_sub_field('orientation_video');
+                        $cover_video = get_sub_field('cover_video');
+                        $file_video = get_sub_field('file_video');
 
-                ?>
-                    <div class="swiper-slide showVideo video <?= $orientation_video ?>" data-video-url="<?= esc_url($file_video['url']) ?>">
-                        <div id="play-button-container">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="play-button-icon" width="100%" height="100%">
-                                <defs>
-                                    <linearGradient id="linear-gradient" x1="0.254" y1="0.5" x2="1" y2="1" gradientUnits="objectBoundingBox">
-                                        <stop offset="0" stop-color="#00f0fc" />
-                                        <stop offset="1" stop-color="#0ff7a4" />
-                                    </linearGradient>
-                                </defs>
-                                <polygon points="20,15 80,50 20,85" />
-                            </svg>
-                        </div>
-                        <img src="<?= esc_url($cover_video['url']) ?>" alt="<?= esc_attr($cover_video['alt']) ?>" width="<?= esc_attr($cover_video['width']) ?>" height="<?= esc_attr($cover_video['height']) ?>"/>
-                    </div>
-                <?php endif; ?>
-            <?php endwhile; ?>
-        </div>
-    </section>
-<?php endif; ?>
+                        if ($orientation_video && $cover_video && $file_video) :
+                        ?>
+                            <div class="splide__slide video <?= esc_attr($orientation_video) ?>" data-splide-html-video="<?= esc_url($file_video['url']) ?>">
+                                <img src="<?= esc_url($cover_video['url']) ?>" alt="<?= esc_attr($cover_video['alt']) ?>" width="<?= esc_attr($cover_video['width']) ?>" height="<?= esc_attr($cover_video['height']) ?>">
+                            </div>
 
-<!-- Clients Slider 2 -->
-<?php if (have_rows($repeater_carousel_client_two, 2)) : ?>
-    <section class="testimonials two swiper-container swiper-container-free-mode mt-16" data-direction="horizontal-reversed">
-        <div class="swiper-wrapper">
+
+                        <?php endif; ?>
+                    <?php endwhile; ?>
+                </div>
+            </div>
+        </section>
+    <?php endif; ?>
+
+  <!-- Clients Slider 2 -->
+  <?php if (have_rows($repeater_carousel_client_two, 2)) : ?>
+    <section class="splide testimonials mt-16">
+        <div class="splide__track">
+            <div class="splide__list">
             <?php while (have_rows($repeater_carousel_client_two, 2)) : the_row();
-                $slide_type = get_sub_field('slide_type');
+                $background_color = get_sub_field('background_color');
+                $testimonial_author = get_sub_field('testimonial_author');
+                $photo_autor = get_sub_field('photo_autor');
+                $name_author = get_sub_field('name_author');
+                $position_author = get_sub_field('position_author');
             ?>
-                <?php if ($slide_type === 'text') :
-                    $background_color = get_sub_field('background_color');
-                    $testimonial_author = get_sub_field('testimonial_author');
-                    $photo_autor = get_sub_field('photo_autor');
-                    $name_author = get_sub_field('name_author');
-                    $position_author = get_sub_field('position_author');
-                ?>
-                    <div class="swiper-slide client <?= $background_color ?> col-3">
-                        <p class="text-md font-700">“<?= $testimonial_author ?>”</p>
-                        <div class="mt-16 d-flex justify-between align-center">
-                            <img src="<?= esc_url($photo_autor['url']) ?>" alt="<?= esc_attr($photo_autor['alt']) ?>" width="<?= esc_attr($photo_autor['width']) ?>" height="<?= esc_attr($photo_autor['height']) ?>" class="d-sm-none" />
-                            <p class="col-9 col-sm-12">
-                                <?= $name_author ?>
-                                <span class="font-800 d-block"><?= $position_author ?></span>
-                            </p>
-                        </div>
+                <div class="splide__slide client <?= $background_color ?> col-3">
+                    <p class="text-md font-700">“<?= $testimonial_author ?>”</p>
+                    <div class="mt-16 d-flex gap-16 align-center">
+                        <img src="<?= esc_url($photo_autor['url']) ?>" alt="<?= esc_attr($photo_autor['alt']) ?>" width="<?= esc_attr($photo_autor['width']) ?>" height="<?= esc_attr($photo_autor['height']) ?>" class="d-sm-none" />
+                        <p class="col-9 col-sm-12">
+                            <?= $name_author ?>
+                            <span class="font-800 d-block"><?= $position_author ?></span>
+                        </p>
                     </div>
-                <?php elseif ($slide_type === 'video') :
-                    $orientation_video = get_sub_field('orientation_video');
-                    $cover_video = get_sub_field('cover_video');
-                    $file_video = get_sub_field('file_video');
-
-                ?>
-                    <div class="swiper-slide showVideo video <?= $orientation_video ?>" data-video-url="<?= esc_url($file_video['url']) ?>">
-                        <div id="play-button-container">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="play-button-icon" width="100%" height="100%">
-                                <defs>
-                                    <linearGradient id="linear-gradient" x1="0.254" y1="0.5" x2="1" y2="1" gradientUnits="objectBoundingBox">
-                                        <stop offset="0" stop-color="#00f0fc" />
-                                        <stop offset="1" stop-color="#0ff7a4" />
-                                    </linearGradient>
-                                </defs>
-                                <polygon points="20,15 80,50 20,85" />
-                            </svg>
-                        </div>
-                        <img src="<?= esc_url($cover_video['url']) ?>" alt="<?= esc_attr($cover_video['alt']) ?>" width="<?= esc_attr($cover_video['width']) ?>" height="<?= esc_attr($cover_video['height']) ?>"/>
-                    </div>
-                <?php endif; ?>
+                </div>
             <?php endwhile; ?>
+            </div>
         </div>
     </section>
 <?php endif; ?>

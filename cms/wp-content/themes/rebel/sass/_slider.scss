@@ -1,166 +1,179 @@
- /**
+/**
  * Clients slider.
  */
-.clients-logos{
-    width: 100%;
-    overflow: hidden;
-    .swiper-wrapper{
-        transition-timing-function: linear;
-    }
-    .swiper-slide{
-        width: 15%;
-        text-align: center;
-    }
+.clients-logos {
+  width: 100%;
+  overflow: hidden;
+  .swiper-wrapper {
+    transition-timing-function: linear;
+  }
+  .swiper-slide {
+    width: 15%;
+    text-align: center;
+  }
 }
- /**
+/**
+ * New slider.
+ */
+.splide {
+  &.videos {
+    margin: 10rem 0 5rem 0;
+    .splide {
+      &__track--nav {
+        & > .splide__list {
+          & > .splide__slide {
+            border: none;
+            &.is-active {
+              border: none;
+            }
+          }
+        }
+      }
+      &__slide {
+        opacity: 0.2;
+        transition: all 0.4s ease;
+        transform: scale(0.75);
+        border-radius: 8px;
+        overflow: hidden;
+        text-align: center;
+        img {
+          width: 100%;
+        }
+        &.is-active {
+          opacity: 1;
+          transform: scale(1);
+        }
+        &:hover {
+          opacity: 1;
+        }
+        &--has-video:hover {
+          .splide__video__play {
+            background: $gradient;
+            &:after {
+              border-color: transparent transparent transparent #262626;
+            }
+          }
+        }
+      }
+      &__video {
+        &__play {
+          background: #262626;
+          width: 60px;
+          height: 60px;
+          opacity: 1;
+          transition: all 0.3s ease;
+          &:after {
+            border-color: transparent transparent transparent #fff;
+            transition: all 0.3s ease;
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
  * Testimonials.
  */
- .testimonials{
-    width: 100%;
+.testimonials {
+  width: 100%;
+  overflow: hidden;
+  .swiper-wrapper {
+    transition-timing-function: linear;
+  }
+  .client {
+    height: 22vw;
+    border-radius: 8px;
     overflow: hidden;
-    .swiper-wrapper{
-        transition-timing-function : linear;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 5.4rem 3.2rem;
+    &.swiper-slide {
+      width: 25%;
+      img {
+        width: 20%;
+        height: auto;
+      }
     }
-    .client{
-        height: 22vw;
-        border-radius: 8px;
-        overflow: hidden;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        padding: 5.4rem 3.2rem;
-        &.swiper-slide{
-            width: 25%;
-            img{
-                width: 20%;
-                height: auto;
-            }
-        }
-        &.green{
-            background-image: url('../img/general/green-bg.webp');
-        }
-        &.lightblue{
-            background-image: url('../img/general/lightblue-bg.webp');
-        }
-        &.blue{
-            background-image: url('../img/general/blue-bg.webp');
-        }
-        p{
-            height: calc(100% - 72px);
-        }
+    &.green {
+      background-image: url("../img/general/green-bg.webp");
     }
-    .video{
-        &.horizontal{
-            width: 38%;
-        }
-        &.vertical{
-            width: 17%;
-        }
-        height: 22vw;
-        border-radius: 8px;
-        overflow: hidden;
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-       &::after{
-        content: '';
-        position: absolute;
-        background: $darkgrey;
-        border-radius: 0 0 8px 8px;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 2.4rem;
-       } 
+    &.lightblue {
+      background-image: url("../img/general/lightblue-bg.webp");
     }
-    
- }
-
- @media (max-width: $screen_2xl) {
-    .testimonials{
-        .video{
-            height: 30vw;
-            &.horizontal{
-                width: 50%;
-            }
-            &.vertical{
-                width: 25%;
-            }
-        }
-        .client{
-            height: 30vw;
-            padding: 3.2rem;
-            p{
-                height: calc(100% - 120px);
-            }
-            &.swiper-slide{
-                img{
-                    width: 18%;
-                }
-            }
-        }
+    &.blue {
+      background-image: url("../img/general/blue-bg.webp");
     }
+    p {
+      height: calc(100% - 72px);
+    }
+  }
 }
 
- @media (max-width: $screen_lg) {
-    .clients-logos{
-        .swiper-slide{
-            width: 28%;
-        }
+@media (max-width: $screen_2xl) {
+  .testimonials {
+    .client {
+      height: 30vw;
+      padding: 3.2rem;
+      p {
+        height: calc(100% - 120px);
+      }
+      img {
+        width: 18%;
+      }
     }
-    .testimonials{
-        .client{
-            padding: 3.2rem;
-            &.swiper-slide{
-                width: 45%;
-            }
-        }
+  }
+}
+
+@media (max-width: $screen_lg) {
+  .clients-logos {
+    .swiper-slide {
+      width: 28%;
     }
+  }
+  .testimonials {
+    .client {
+      padding: 3.2rem;
+      &.swiper-slide {
+        width: 45%;
+      }
+    }
+  }
 }
 
 @media (max-width: $screen_md) {
-    .clients-logos{
-        .swiper-slide{
-            width: 35%;
-        }
+  .clients-logos {
+    .swiper-slide {
+      width: 35%;
     }
-    .testimonials{
-        .client{
-            height: 38vw;
-            padding: 2.4rem;
-            &.swiper-slide{
-                width: 50%;
-            }
-        }
-        .video{
-            height: 38vw;
-        }
+  }
+  .testimonials {
+    .client {
+      height: 38vw;
+      padding: 2.4rem;
+      &.swiper-slide {
+        width: 50%;
+      }
     }
+    .video {
+      height: 38vw;
+    }
+  }
 }
 @media (max-width: $screen_sm) {
-    .testimonials{
-        .client{
-            height: 110vw;
-            padding: 1.6rem;
-            p{
-                height: calc(100% - 100px);
-            }
-        }
-        .video{
-            height: 110vw;
-            &.horizontal{
-                width: 100%;
-            }
-             &.vertical{
-                width: 50%;
-            }
-        }
+  .testimonials {
+    .client {
+      height: 110vw;
+      padding: 1.6rem;
+      p {
+        height: calc(100% - 100px);
+      }
     }
-    .clients-logos{
-        .swiper-slide{
-            width: 55%;
-        }
+  }
+  .clients-logos {
+    .swiper-slide {
+      width: 55%;
     }
+  }
 }

@@ -34,6 +34,9 @@
                     <a href="<?= home_url('/pricing/') ?>" class="text-sm text-black">Pricing</a>
                 </div>
                 <div class="col-12 mt-40 mt-sm-16">
+                    <a href="<?= home_url('/portfolio/') ?>" class="text-sm text-black">Portfolio</a>
+                </div>
+                <div class="col-12 mt-40 mt-sm-16">
                     <a href="<?= home_url('/get-started/') ?>" class="text-sm text-black">Get Started</a>
                 </div>
             </div>
@@ -54,24 +57,28 @@
 <?php endif; ?>
 </footer>
 
+
 <!-- The modal -->
 <div id="videoModal" class="modal">
+    <span class="close" id="closeModal">&times;</span>
     <div class="modal-content">
-        <span class="close" id="closeModal">&times;</span>
         <video id="videoPlayer" controls>
             <source src="" type="video/mp4" />
         </video>
     </div>
 </div>
-</div>
-<script></script>
+
+
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <!-- Aos JS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- Splide -->
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/js/splide-extension-video.min.js"></script>
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-<script src="<?= get_template_directory_uri() ?>/js/functions.js"></script>
+<script src="<?= get_template_directory_uri() ?>/js/dist/functions.dev.js"></script>
 </body>
 
 </html>

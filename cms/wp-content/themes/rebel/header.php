@@ -15,7 +15,6 @@
     <link rel="icon" type="image/svg+xml" sizes="32x32" href="<?= get_template_directory_uri() ?>/img/general/favicon-32x32.svg" />
     <link rel="icon" type="image/svg+xml" sizes="16x16" href="<?= get_template_directory_uri() ?>/img/general/favicon-16x16.svg" />
     <link rel="icon" type="image/svg+xml" href="<?= get_template_directory_uri() ?>/img/general/favicon-16x16.svg" />
-
     <!-- Link Adobe Fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/lca3ugm.css" />
     <!-- Link Google Icons -->
@@ -23,6 +22,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- Link Aos Scroll Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Link Splide -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/css/splide-extension-video.min.css">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/main.css" />
@@ -57,7 +61,9 @@
         }
         ?>
     </title>
-
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
 
     <?php wp_head() ?>
 </head>
@@ -83,6 +89,7 @@
                 </div>
                 <ul class="d-flex gap-64 align-center d-md-none">
                     <li><a href="<?= home_url('/pricing/') ?>" class="text-sm nav-link">Pricing</a></li>
+                    <!-- <li><a href="<?= home_url('/portfolio/') ?>" class="text-sm nav-link">Portfolio</a></li> -->
                     <li>
                         <a href="<?= home_url('/get-started/') ?>" class="button gradient">Book a call</a>
                     </li>
@@ -90,6 +97,7 @@
             </nav>
             <ul class="mobile-menu">
                 <li><a href="<?= home_url('/pricing/') ?>" class="text-md nav-link">Pricing</a></li>
+                <!-- <li><a href="<?= home_url('/portfolio/') ?>" class="text-md nav-link">Portfolio</a></li> -->
                 <li>
                     <a href="<?= home_url('/get-started/') ?>" class="button gradient">Book a call</a>
                 </li>
