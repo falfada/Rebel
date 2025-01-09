@@ -192,17 +192,12 @@ $(document).ready(function () {
   splideContainers.forEach(function (container) {
     if (container.classList.contains("videos")) {
       new Splide(container, {
-        type: "loop",
-        gap: "0rem",
-        focus: "center",
-        arrows: true,
+        type: 'loop',
+        focus: 'center',
         pagination: false,
         updateOnMove: true,
         autoWidth: true,
-        start: 1,
-        video: {
-          loop: true
-        }
+        start: 1
       }).mount(window.splide.Extensions);
       document.addEventListener("click", function (event) {
         if (event.target.tagName === "VIDEO") {
