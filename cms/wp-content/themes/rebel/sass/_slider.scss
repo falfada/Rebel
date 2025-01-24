@@ -108,7 +108,9 @@
       background-image: url("../img/general/blue-bg.webp");
     }
     p {
-      height: calc(100% - 72px);
+      &:first-child{
+        height: calc(100% - 72px);
+      }
     }
   }
 }
@@ -116,14 +118,24 @@
 @media (max-width: $screen_2xl) {
   .testimonials {
     .client {
-      height: 30vw;
+      height: 32vw;
       padding: 3.2rem;
       p {
-        height: calc(100% - 120px);
+        &:first-child{
+          height: calc(100% - 7rem);
+        }
       }
       img {
         width: 18%;
       }
+    }
+  }
+}
+
+@media(max-width: $screen_xl) {
+  .testimonials {
+    .client {
+      height: 40vw;
     }
   }
 }
@@ -136,10 +148,8 @@
   }
   .testimonials {
     .client {
-      padding: 3.2rem;
-      &.swiper-slide {
-        width: 45%;
-      }
+      width: 45%;
+      height: auto;
     }
   }
 }
@@ -166,10 +176,11 @@
 @media (max-width: $screen_sm) {
   .testimonials {
     .client {
-      height: 110vw;
       padding: 1.6rem;
       p {
-        height: calc(100% - 100px);
+        &:first-child{
+          height: calc(100% - 100px);
+        }
       }
     }
   }
