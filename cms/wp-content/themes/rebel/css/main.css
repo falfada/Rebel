@@ -1994,10 +1994,10 @@ select {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 3rem;
     margin-top: 2rem; }
   .portfolio-item {
-    height: 222px;
+    height: 13vw;
     position: relative;
     border-radius: 5px;
     overflow: hidden;
@@ -2005,6 +2005,8 @@ select {
     display: flex;
     justify-content: center;
     flex-wrap: wrap; }
+    .portfolio-item.reel {
+      height: 30vw; }
     .portfolio-item::before {
       content: "";
       width: 100%;
@@ -2069,7 +2071,9 @@ select {
     .portfolio-grid {
       grid-template-columns: repeat(2, 1fr); }
     .portfolio-item {
-      height: 150px; }
+      height: 22vw; }
+      .portfolio-item.reel {
+        height: 45vw; }
       .portfolio-item img {
         max-width: 100%; } }
 

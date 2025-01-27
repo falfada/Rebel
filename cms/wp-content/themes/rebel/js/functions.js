@@ -18,14 +18,20 @@ $(document).ready(function () {
       },
     });
   });
-
-  gsap.to(".content", {
+ document.querySelectorAll(".content").forEach((item) => {
+  gsap.to(item, {
     duration: 1.5,
     y: 0,
     opacity: 1,
     ease: "power3.out",
     stagger: 0.3,
+    scrollTrigger: {
+      trigger: item,
+      start: "top 90%",
+      toggleActions: "play none none none",
+    },
   });
+ });
   /**
    * Form Input.
    */

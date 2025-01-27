@@ -20,11 +20,11 @@
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 3rem;
     margin-top: 2rem;
   }
   &-item {
-    height: 222px;
+    height: 13vw;
     position: relative;
     border-radius: 5px;
     overflow: hidden;
@@ -32,6 +32,9 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    &.reel{
+      height: 30vw;
+    }
 
     &::before {
       content: "";
@@ -125,7 +128,10 @@
       grid-template-columns: repeat(2, 1fr);
     }
     &-item {
-      height: 150px;
+      height: 22vw;
+      &.reel{
+        height: 45vw;
+      }
       img{
         max-width: 100%;
       }
