@@ -18,14 +18,20 @@ $(document).ready(function () {
       },
     });
   });
-
-  gsap.to(".content", {
+ document.querySelectorAll(".content").forEach((item) => {
+  gsap.to(item, {
     duration: 1.5,
     y: 0,
     opacity: 1,
     ease: "power3.out",
     stagger: 0.3,
+    scrollTrigger: {
+      trigger: item,
+      start: "top 90%",
+      toggleActions: "play none none none",
+    },
   });
+ });
   /**
    * Form Input.
    */
@@ -43,12 +49,13 @@ $(document).ready(function () {
 
   $(window).on("load", function () {
     if ($("body.home").length) {
-      let myVar = setTimeout(showPage, 3000);
 
-      function showPage() {
+      const showPage = function() {
         document.getElementById("pageLoader").style.display = "none";
         document.getElementById("pageContent").style.display = "block";
-      }
+      };
+      let myVar = setTimeout(showPage, 3000);
+    
     }
   });
 
@@ -197,8 +204,8 @@ $(document).ready(function () {
   splideContainers.forEach((container) => {
     if (container.classList.contains("videos")) {
       new Splide(container, {
-        type   : 'loop',
-        focus  : 'center',
+        type: "loop",
+        focus: "center",
         pagination: false,
         updateOnMove: true,
         autoWidth: true,
@@ -231,6 +238,10 @@ $(document).ready(function () {
         gap: "2rem",
         breakpoints: {
           768: {
+            perPage: 2,
+            autoWidth: false,
+          },
+          640: {
             perPage: 1,
           },
         },
@@ -238,7 +249,6 @@ $(document).ready(function () {
     }
   });
 
-  
   /**
    * Scroll Animation.
    */

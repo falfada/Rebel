@@ -1237,25 +1237,27 @@ header {
       background-image: url("../img/general/lightblue-bg.webp"); }
     .testimonials .client.blue {
       background-image: url("../img/general/blue-bg.webp"); }
-    .testimonials .client p {
+    .testimonials .client p:first-child {
       height: calc(100% - 72px); }
 
 @media (max-width: 1536px) {
   .testimonials .client {
-    height: 30vw;
+    height: 32vw;
     padding: 3.2rem; }
-    .testimonials .client p {
-      height: calc(100% - 120px); }
+    .testimonials .client p:first-child {
+      height: calc(100% - 7rem); }
     .testimonials .client img {
       width: 18%; } }
+@media (max-width: 1280px) {
+  .testimonials .client {
+    height: 40vw; } }
 @media (max-width: 1024px) {
   .clients-logos .swiper-slide {
     width: 28%; }
 
   .testimonials .client {
-    padding: 3.2rem; }
-    .testimonials .client.swiper-slide {
-      width: 45%; } }
+    width: 45%;
+    height: auto; } }
 @media (max-width: 768px) {
   .clients-logos .swiper-slide {
     width: 35%; }
@@ -1269,9 +1271,8 @@ header {
     height: 38vw; } }
 @media (max-width: 640px) {
   .testimonials .client {
-    height: 110vw;
     padding: 1.6rem; }
-    .testimonials .client p {
+    .testimonials .client p:first-child {
       height: calc(100% - 100px); }
 
   .clients-logos .swiper-slide {
@@ -1993,10 +1994,10 @@ select {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 3rem;
     margin-top: 2rem; }
   .portfolio-item {
-    height: 222px;
+    height: 13vw;
     position: relative;
     border-radius: 5px;
     overflow: hidden;
@@ -2004,6 +2005,8 @@ select {
     display: flex;
     justify-content: center;
     flex-wrap: wrap; }
+    .portfolio-item.reel {
+      height: 30vw; }
     .portfolio-item::before {
       content: "";
       width: 100%;
@@ -2068,7 +2071,9 @@ select {
     .portfolio-grid {
       grid-template-columns: repeat(2, 1fr); }
     .portfolio-item {
-      height: 150px; }
+      height: 22vw; }
+      .portfolio-item.reel {
+        height: 45vw; }
       .portfolio-item img {
         max-width: 100%; } }
 

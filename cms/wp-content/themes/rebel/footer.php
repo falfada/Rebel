@@ -78,7 +78,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/js/splide-extension-video.min.js"></script>
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-<script src="<?= get_template_directory_uri() ?>/js/dist/functions.dev.js"></script>
+<script src="<?= get_template_directory_uri() ?>/js/functions.min.js"></script>
 </body>
 
 </html>
