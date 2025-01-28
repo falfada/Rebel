@@ -316,7 +316,7 @@ $group_compare_data_by_column = [];
                 <div class="splide__slide client <?= $background_color ?> col-3">
                     <p class="text-md font-700">“<?= $testimonial_author ?>”</p>
                     <div class="mt-16 d-flex gap-16 align-center">
-                        <img src="<?= esc_url($photo_autor['url']) ?>" alt="<?= esc_attr($photo_autor['alt']) ?>" width="<?= esc_attr($photo_autor['width']) ?>" height="<?= esc_attr($photo_autor['height']) ?>" class="d-sm-none" />
+                        <img src="<?= esc_url($photo_autor['url']) ?>" alt="<?= esc_attr($photo_autor['alt']) ?>" width="72" height="auto" class="d-sm-none" />
                         <p class="col-9 col-sm-12">
                             <?= $name_author ?>
                             <span class="font-800 d-block"><?= $position_author ?></span>
