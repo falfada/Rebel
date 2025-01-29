@@ -956,7 +956,7 @@ header {
   flex-direction: column;
   background-color: #fff;
   position: absolute;
-  top: 68px;
+  top: 60px;
   right: 0;
   padding: 4rem 1.6rem;
   box-shadow: 0 4px 14px rgba(38, 38, 38, 0.15); }
@@ -1265,7 +1265,7 @@ header {
     width: 35%; }
 
   .testimonials .client {
-    height: 38vw;
+    height: 55vw;
     padding: 2.4rem; }
     .testimonials .client.swiper-slide {
       width: 50%; }
@@ -1330,10 +1330,7 @@ header {
 @media (max-width: 640px) {
   .video #play-button-icon.center, .video #play-button-icon.top-left {
     width: 11rem;
-    height: 11rem; }
-  .video #play-button-icon.top-left {
-    top: -5.5rem;
-    left: -3rem; } }
+    height: 11rem; } }
 .faq-container {
   background: white;
   box-shadow: 3px 3px 25px rgba(191, 191, 191, 0.3);
@@ -1533,6 +1530,8 @@ header {
 @media (max-width: 640px) {
   .pricing-options {
     width: 100%; }
+    .pricing-options label {
+      font-size: initial; }
   .pricing-container {
     padding: 3.2rem 1rem; }
     .pricing-container ul li span.material-symbols-outlined {

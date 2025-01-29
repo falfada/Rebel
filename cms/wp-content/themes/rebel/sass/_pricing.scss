@@ -193,6 +193,9 @@
   .pricing{
     &-options{
       width: 100%;
+      label{
+        font-size: initial;
+      }
     }
     &-container{
       padding: 3.2rem 1rem;

@@ -243,7 +243,7 @@ $group_compare_data_by_column = [];
                         <div class="swiper-slide position-relative <?php if ($column !== 'Rebel') : ?>text-white<?php endif; ?> text-center">
                             <?php if ($column === 'Rebel') : ?>
                                 <div class="rebel-bg"></div>
-                                <img src="<?= get_template_directory_uri() ?>/img/general/logo-black.svg" alt="" class="m-auto" />
+                                <img src="<?= get_template_directory_uri() ?>/img/general/logo-black.svg" alt="" class="col-9 m-auto" />
                             <?php else : ?>
                                 <h3 class="text-xl"><?= $column ?></h3>
                             <?php endif; ?>

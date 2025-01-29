@@ -338,7 +338,7 @@ if (is_front_page()) :
                     <?php endif ?>
                 </div>
                 <?php if ($bottom_image_how_it_works) : ?>
-                    <img src="<?= esc_url($bottom_image_how_it_works['url']) ?>" alt="<?= esc_url($bottom_image_how_it_works['alt']) ?>" width="<?= esc_attr($bottom_image_how_it_works['width']) ?>" height="<?= esc_attr($bottom_image_how_it_works['height']) ?>" class="position-absolute bottom right d-lg-none" />
+                    <img src="<?= esc_url($bottom_image_how_it_works['url']) ?>" alt="<?= esc_url($bottom_image_how_it_works['alt']) ?>" width="<?= esc_attr($bottom_image_how_it_works['width']) ?>" height="auto" class="position-absolute bottom right d-lg-none" />
                 <?php endif; ?>
             </div>
         </div>
