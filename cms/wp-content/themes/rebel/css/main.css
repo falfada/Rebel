@@ -1171,6 +1171,8 @@ header {
   .clients-logos .swiper-slide {
     width: 15%;
     text-align: center; }
+    .clients-logos .swiper-slide img {
+      max-width: 100%; }
 
 /**
  * New slider.
@@ -1272,8 +1274,6 @@ header {
 @media (max-width: 640px) {
   .testimonials .client {
     padding: 1.6rem; }
-    .testimonials .client p:first-child {
-      height: calc(100% - 100px); }
 
   .clients-logos .swiper-slide {
     width: 55%; } }

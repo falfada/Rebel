@@ -10,6 +10,9 @@
   .swiper-slide {
     width: 15%;
     text-align: center;
+    img{
+      max-width: 100%;
+    }
   }
 }
 /**
@@ -177,11 +180,6 @@
   .testimonials {
     .client {
       padding: 1.6rem;
-      p {
-        &:first-child{
-          height: calc(100% - 100px);
-        }
-      }
     }
   }
   .clients-logos {
