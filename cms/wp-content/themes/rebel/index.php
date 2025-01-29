@@ -97,7 +97,7 @@ if (is_front_page()) :
             <div class="swiper-wrapper">
                 <?php foreach ($gallery_logos_carousel as $logo) : ?>
                     <div class="swiper-slide">
-                        <img src="<?= esc_url($logo['url']); ?>" alt="<?= esc_attr($logo['alt']); ?>" width="<?= esc_attr($logo['width']); ?>" height="<?= esc_attr($logo['height']); ?>" />
+                        <img src="<?= esc_url($logo['url']); ?>" alt="<?= esc_attr($logo['alt']); ?>" width="<?= esc_attr($logo['width']); ?>" height="auto>" />
                     </div>
                 <?php endforeach; ?>
             </div>
@@ -317,7 +317,7 @@ if (is_front_page()) :
                                 <div class="round-number black text-md"><?= get_row_index() ?></div>
                                 <h3 class="text-lg font-800"><?= $title ?></h3>
                             </div>
-                            <img src="<?= esc_url($image['url']) ?>" alt="<?= esc_attr($image['alt']) ?>" width="<?= esc_attr($image['width']) ?>" height="<?= esc_attr($image['height']) ?>" class="mt-16" style="width: 90%; margin: auto; display: block" />
+                            <img src="<?= esc_url($image['url']) ?>" alt="<?= esc_attr($image['alt']) ?>" width="<?= esc_attr($image['width']) ?>" height="auto" class="mt-16" style="width: 90%; margin: auto; display: block" />
                             <p class="text-md mt-40"><?= $description ?></p>
                         </div>
 
