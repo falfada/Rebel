@@ -128,7 +128,7 @@ $repeater_carousel_client_two = 'repeater_carousel_client_two';
                     <p class="text-md font-700">“<?= $testimonial_author ?>”</p>
                     <div class="mt-16 d-flex gap-16 align-center">
                         <img src="<?= esc_url($photo_autor['url']) ?>" alt="<?= esc_attr($photo_autor['alt']) ?>" width="72" height="auto" class="d-sm-none" />
-                        <p class="col-9 col-sm-12">
+                        <p class="col-8 col-sm-12">
                             <?= $name_author ?>
                             <span class="font-800 d-block"><?= $position_author ?></span>
                         </p>
