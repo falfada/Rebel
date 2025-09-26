@@ -41,7 +41,7 @@ $repeater_carousel_client_two = 'repeater_carousel_client_two';
                             </defs>
                             <polygon points="20,15 80,50 20,85" />
                         </svg>
-                        <img src="<?= esc_url($cover_video_schedule['url']) ?>" alt="<?= esc_attr($cover_video_schedule['alt']) ?>" width="<?= esc_attr($cover_video_schedule['width']) ?>" height="<?= esc_attr($cover_video_schedule['height']) ?>" class="col-12">
+                        <img src="<?= esc_url($cover_video_schedule['url']) ?>" alt="<?= esc_attr($cover_video_schedule['alt']) ?>" width="<?= esc_attr($cover_video_schedule['width']) ?>"  class="col-12">
                     </div>
                 <?php endif; ?>
             </div>
