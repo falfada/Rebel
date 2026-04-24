@@ -71,6 +71,13 @@
 
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<!-- Instagram Widget -->
+ <script 
+  src="https://widgets.leadconnectorhq.com/loader.js"  
+  data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" 
+ data-widget-id="69cc27b0af4d345fe0b69113"   > 
+ </script>
+
 <!-- Aos JS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!-- Splide -->
