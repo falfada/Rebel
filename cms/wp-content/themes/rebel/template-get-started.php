@@ -46,10 +46,8 @@ $repeater_carousel_client_two = 'repeater_carousel_client_two';
                 <?php endif; ?>
             </div>
             <div class="col-5 col-md-12 mt-md-24">
-                <?php if ($calendly_link_schedule) : ?>
-                    <div class="calendly-inline-widget" data-url="<?= $calendly_link_schedule ?>" style="min-width:320px;height:700px;"></div>
-                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-                <?php endif; ?>
+                <iframe src="https://api.leadconnectorhq.com/widget/booking/uBVglHxouZDIAwXkto0W" style="width: 100%;border:none;overflow: hidden;" scrolling="no" id="uBVglHxouZDIAwXkto0W_1776098941585"></iframe><br><script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
+
             </div>
         </div>
     </div>
