@@ -25,7 +25,7 @@ if (is_front_page()) :
     $right_image_about = get_field('right_image_about');
     /** Pricing fields */
     $title_pricing = get_field('title_pricing');
-    $group_options_pricing = get_field('group_options_pricing');
+    // $group_options_pricing = get_field('group_options_pricing');
     $repeater_plans_pricing = 'repeater_plans_pricing';
     $button_pricing = get_field('button_pricing');
     $repeater_visible_features_list = 'repeater_visible_features_list';
@@ -221,18 +221,6 @@ if (is_front_page()) :
     <section class="pricing-home">
         <div class="container text-center">
             <h2 class="text-center text-5xl col-9 col-lg-12 m-auto"><?= $title_pricing ?></h2>
-            <div class="pricing-options monthly">
-                <?php if ($group_options_pricing) : ?>
-                    <label class="monthly">
-                        <input type="radio" name="interval-pricing" value="monthly" checked />
-                        <?= $group_options_pricing['montly'] ?>
-                    </label>
-                    <label class="quaterly">
-                        <input type="radio" name="interval-pricing" value="quaterly" />
-                        <?= $group_options_pricing['quaterly'] ?>
-                    </label>
-                <?php endif; ?>
-            </div>
             <?php if (have_rows($repeater_plans_pricing)) : ?>
                 <div class="d-flex justify-center align-center text-left gap-16 gap-md-32 mt-48">
                     <?php while (have_rows($repeater_plans_pricing)) : the_row();
@@ -242,7 +230,6 @@ if (is_front_page()) :
                         $title = get_sub_field('title');
                         $description = get_sub_field('description');
                         $monthly_price = get_sub_field('monthly_price');
-                        $quaterly_price = get_sub_field('quaterly_price');
                     ?>
                         <div class="col-4 col-2xl-5 col-md-12 pricing-container <?= $background_color ?> <?= $is_recommended ? 'recommended' : '' ?>" data-aos="fade-up">
                             <span class="material-symbols-outlined"> <?= $icon ?> </span>
@@ -250,8 +237,7 @@ if (is_front_page()) :
                             <p class="text-md mt-16 col-10"><?= $description ?></p>
                             <div class="d-flex align-baseline gap-16">
                                 <div class="price">
-                                    <p class="monthly selected text-4xl font-800"><?= $monthly_price ?></p>
-                                    <p class="quaterly text-4xl font-800"><?= $quaterly_price ?></p>
+                                    <p class="text-4xl font-800"><?= $monthly_price ?></p>
                                 </div>
                                 <p class="text-sm">per month</p>
                             </div>
