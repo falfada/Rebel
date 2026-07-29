@@ -1495,10 +1495,10 @@ header {
   .pricing-step h3 {
     height: 100px; }
 
-.price p {
+/* .price p {
   display: none; }
   .price p.selected {
-    display: inline; }
+    display: inline; } */
 
 .logo-table {
   margin-top: -2rem;

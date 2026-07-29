@@ -275,20 +275,20 @@ $(document).ready(function () {
   /**
    * Pricing.
    */
-  $(".pricing-options input").change(function () {
-    let interval = $(this).val();
-    if ($(".pricing-options").hasClass("monthly")) {
-      $(".pricing-options").removeClass("monthly");
-      $(".pricing-options").addClass(interval);
-      $(".price .monthly").removeClass("selected");
-      $(".price .quaterly").addClass("selected");
-    } else {
-      $(".pricing-options").removeClass("quaterly");
-      $(".pricing-options").addClass(interval);
-      $(".price .quaterly").removeClass("selected");
-      $(".price .monthly").addClass("selected");
-    }
-  });
+  // $(".pricing-options input").change(function () {
+  //   let interval = $(this).val();
+  //   if ($(".pricing-options").hasClass("monthly")) {
+  //     $(".pricing-options").removeClass("monthly");
+  //     $(".pricing-options").addClass(interval);
+  //     $(".price .monthly").removeClass("selected");
+  //     $(".price .quaterly").addClass("selected");
+  //   } else {
+  //     $(".pricing-options").removeClass("quaterly");
+  //     $(".pricing-options").addClass(interval);
+  //     $(".price .quaterly").removeClass("selected");
+  //     $(".price .monthly").addClass("selected");
+  //   }
+  // });
 
   /**
    * Pricing List.
